@@ -1,0 +1,331 @@
+/* ── nav ── */
+.nav {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 50;
+  transition: background 0.4s var(--ease), border-color 0.4s var(--ease), backdrop-filter 0.4s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+.navSolid {
+  background: rgba(6, 15, 36, 0.72);
+  backdrop-filter: blur(14px);
+  border-bottom-color: var(--hairline);
+}
+.navInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+.brand b {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.brandGlyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  color: #04101f;
+  background: var(--grad-rail);
+}
+.navlinks {
+  display: flex;
+  gap: 28px;
+}
+.navlinks a {
+  color: var(--gray);
+  font-size: 14px;
+  transition: color 0.3s var(--ease);
+}
+.navlinks a:hover {
+  color: var(--ink);
+}
+.navcta {
+  color: #04101f;
+}
+
+/* ── hero ── */
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: 96px 0 64px;
+  background: var(--grad-mesh);
+  overflow: hidden;
+}
+.stars {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.heroGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+.h1 {
+  font-size: var(--t-display);
+  font-weight: 800;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  margin: 18px 0 20px;
+  text-wrap: balance;
+}
+.h1 em {
+  font-style: normal;
+  background: var(--grad-rail);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lede {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--gray);
+  max-width: 52ch;
+}
+.heroCtas {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.heroArt {
+  display: flex;
+  justify-content: center;
+}
+.glyph {
+  width: min(420px, 80%);
+  height: auto;
+  filter: drop-shadow(0 0 60px rgba(0, 212, 255, 0.18));
+}
+
+/* ── stats ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.stat {
+  padding: 22px;
+}
+.stat b {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 4px;
+}
+.stat span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+/* ── steps (5) — staggered widths, not equal cards ── */
+.steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  counter-reset: step;
+}
+.step {
+  position: relative;
+  padding: 24px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.stepNo {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--ink-dim);
+  letter-spacing: 0.1em;
+}
+.stepIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  color: var(--cyan);
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid var(--hairline);
+}
+.step h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.step p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--gray);
+}
+.step::after {
+  content: "";
+  position: absolute;
+  top: 46px;
+  right: -8px;
+  width: 16px;
+  height: 1px;
+  background: var(--grad-rail);
+  opacity: 0.5;
+}
+.step:last-child::after {
+  display: none;
+}
+
+/* ── mechanics ── */
+.mechCols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin-bottom: 40px;
+}
+.mechCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hairline);
+}
+.mechIcon {
+  color: var(--magenta);
+}
+.mechCol h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.mechCol p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+  max-width: 38ch;
+}
+.flowCard {
+  padding: 24px 28px 14px;
+}
+.flowHead {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.flowHead .mono {
+  font-size: 12px;
+  color: var(--cyan);
+  letter-spacing: 0.1em;
+}
+.flowHint {
+  font-size: 12px;
+  color: var(--ink-dim);
+}
+
+/* ── bands (live) ── */
+.bands {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.bandCard {
+  padding: 26px 22px;
+  border-left: 3px solid var(--bandc, var(--cyan));
+}
+.bandCard b {
+  display: block;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--bandc, var(--cyan));
+  line-height: 1;
+}
+.bandCard span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.courtCta {
+  margin-top: 32px;
+}
+
+/* ── footer ── */
+.footer {
+  border-top: 1px solid var(--hairline-soft);
+  padding: 28px 0;
+  margin-top: 40px;
+}
+.footerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footBrand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--ink);
+}
+.footMid {
+  font-size: 13px;
+  color: var(--ink-dim);
+}
+.footerInner a {
+  font-size: 13px;
+}
+
+/* ── responsive ── */
+@media (max-width: 1000px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .heroArt {
+    order: -1;
+  }
+  .glyph {
+    width: min(300px, 70%);
+  }
+  .stats,
+  .bands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .step::after {
+    display: none;
+  }
+  .mechCols {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .navlinks {
+    display: none;
+  }
+}

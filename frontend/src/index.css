@@ -1,0 +1,381 @@
+/* ════════════════════════════════════════════════════════════════════
+   TIME·MACHINE — design system
+   Futurist rebate court. Palette preserved: navy / cyan / magenta / gray.
+   ════════════════════════════════════════════════════════════════════ */
+:root {
+  /* ── palette (locked) ── */
+  --navy: #0a1a3a;
+  --graphite: #050d1f; /* supporting surface neutral */
+  --cyan: #00d4ff;
+  --magenta: #ff006e;
+  --gray: #b8c5d6;
+  --offwhite: #e8eef7;
+
+  /* derived surfaces / text */
+  --bg: #060f24;
+  --surface-1: rgba(16, 32, 66, 0.55);
+  --surface-2: rgba(10, 22, 50, 0.72);
+  --hairline: rgba(0, 212, 255, 0.14);
+  --hairline-soft: rgba(184, 197, 214, 0.1);
+  --ink: var(--offwhite);
+  --ink-dim: #8595ac;
+
+  /* bands */
+  --band-FAIR: #00d4ff;
+  --band-BORDERLINE: #ffc24b;
+  --band-EXTRACTIVE: #ff8a3d;
+  --band-PREDATORY: #ff006e;
+  --band-PENDING: #6a7a92;
+
+  /* gradients */
+  --grad-cyan: linear-gradient(135deg, #00d4ff 0%, #0a86c4 100%);
+  --grad-magenta: linear-gradient(135deg, #ff006e 0%, #b00a59 100%);
+  --grad-rail: linear-gradient(90deg, #00d4ff 0%, #7a4fff 52%, #ff006e 100%);
+  --grad-mesh: radial-gradient(900px 520px at 12% -8%, rgba(0, 212, 255, 0.16), transparent 60%),
+    radial-gradient(760px 480px at 102% 4%, rgba(255, 0, 110, 0.13), transparent 56%),
+    linear-gradient(180deg, #0a1a3a 0%, #060f24 52%, #050d1f 100%);
+
+  /* type */
+  --font-sans: "Geist", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  /* 4-size landing scale (clamped) */
+  --t-display: clamp(2.6rem, 5.4vw, 4.6rem);
+  --t-h2: clamp(1.6rem, 2.6vw, 2.3rem);
+  --t-body: 1.0625rem;
+  --t-small: 0.8125rem;
+
+  /* 8px spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+
+  /* one radius family */
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-pill: 999px;
+
+  /* two shadow tokens (tinted, single-direction) */
+  --shadow-soft: 0 18px 40px -22px rgba(2, 8, 20, 0.8);
+  --shadow-glow: 0 0 0 1px rgba(0, 212, 255, 0.25), 0 16px 50px -18px rgba(0, 212, 255, 0.35);
+
+  /* motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --maxw: 1240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--t-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* fixed noise overlay — never on scrolling containers */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+::selection {
+  background: rgba(0, 212, 255, 0.28);
+  color: #fff;
+}
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
+input,
+textarea,
+select {
+  font-family: var(--font-mono);
+}
+code,
+.mono {
+  font-family: var(--font-mono);
+}
+.tnum {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* visible focus ring for keyboard a11y */
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--cyan);
+  color: #04101f;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--s-5);
+}
+
+/* ── eyebrow tag ── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  padding: 6px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius-pill);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+/* ── glass card (static) ── */
+.glass {
+  background: linear-gradient(160deg, var(--surface-1), var(--surface-2));
+  border: 1px solid var(--hairline);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* ── buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  border: none;
+  border-radius: var(--radius-pill);
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #04101f;
+  background: var(--grad-cyan);
+  transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease), filter 0.3s var(--ease),
+    opacity 0.3s var(--ease);
+  box-shadow: 0 8px 24px -10px rgba(0, 212, 255, 0.6);
+}
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px -10px rgba(0, 212, 255, 0.7);
+}
+.btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.btn .icoCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(4, 16, 31, 0.16);
+  transition: transform 0.5s var(--ease);
+}
+.btn:hover:not(:disabled) .icoCircle {
+  transform: translate(2px, -1px);
+}
+.btn.magenta {
+  background: var(--grad-magenta);
+  color: #fff;
+  box-shadow: 0 8px 24px -10px rgba(255, 0, 110, 0.6);
+}
+.btn.ghost {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--hairline);
+  box-shadow: none;
+}
+.btn.ghost:hover:not(:disabled) {
+  background: rgba(0, 212, 255, 0.08);
+  transform: translateY(-2px);
+}
+.btn.sm {
+  padding: 8px 14px;
+  font-size: 12.5px;
+}
+.btn.block {
+  width: 100%;
+}
+
+.textlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--gray);
+  font-size: 14px;
+  transition: color 0.3s var(--ease);
+}
+.textlink:hover {
+  color: var(--cyan);
+}
+
+/* ── band pill ── */
+.bandpill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  color: var(--bandc, var(--cyan));
+  background: color-mix(in srgb, var(--bandc, var(--cyan)) 15%, transparent);
+  border: 1px solid color-mix(in srgb, var(--bandc, var(--cyan)) 42%, transparent);
+}
+.bandpill::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* ── form fields ── */
+label.fl,
+.fl {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin: var(--s-3) 0 6px;
+}
+.fl-wrap {
+  display: block;
+}
+.field {
+  width: 100%;
+  background: rgba(5, 13, 31, 0.6);
+  border: 1px solid var(--hairline-soft);
+  border-radius: var(--radius-sm);
+  color: var(--ink);
+  padding: 11px 13px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.field:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.12);
+}
+textarea.field {
+  min-height: 84px;
+  resize: vertical;
+  line-height: 1.5;
+}
+select.field {
+  appearance: none;
+}
+
+/* section scaffolding */
+.section {
+  padding: var(--s-9) 0;
+}
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  margin-bottom: var(--s-7);
+  max-width: 60ch;
+}
+.section-head h2 {
+  font-size: var(--t-h2);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.section-head p {
+  color: var(--gray);
+  max-width: 62ch;
+}
+
+/* reveal-on-scroll base (GSAP toggles .is-in) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

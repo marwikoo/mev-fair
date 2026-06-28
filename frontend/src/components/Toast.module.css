@@ -1,0 +1,66 @@
+.stack {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(92vw, 460px);
+}
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 16px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, rgba(16, 32, 66, 0.96), rgba(5, 13, 31, 0.96));
+  border: 1px solid var(--hairline);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+  animation: toastin 0.5s var(--ease-spring);
+}
+@keyframes toastin {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+}
+.dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 10px var(--cyan);
+}
+.msg {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+.success .dot {
+  background: #34e3a4;
+  box-shadow: 0 0 10px #34e3a4;
+}
+.error {
+  border-color: color-mix(in srgb, var(--magenta) 45%, transparent);
+}
+.error .dot {
+  background: var(--magenta);
+  box-shadow: 0 0 10px var(--magenta);
+}
+.pending .dot {
+  background: var(--band-BORDERLINE);
+  box-shadow: 0 0 10px var(--band-BORDERLINE);
+  animation: pulse 1s infinite var(--ease);
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "app": "mev-fair",
+  "hub": "03-vela",
+  "contract_class": "MevFairCourt",
+  "operation_type": "REBATE",
+  "domain": "dex_bundle_mev_fairness",
+  "architecture": "pipeline_of_stages",
+  "network": "studionet",
+  "rpc_url": "https://studio.genlayer.com/api",
+  "rpc_url_note": "Prompt specified http://127.0.0.1:4000/api but local node was down (port 4000 closed); funded wallet lives on hosted studionet, so deployed there (same fallback as sibling battery-health).",
+  "chain_id": 61999,
+  "deployer_address": "0xD61ee8b699f7543dcbF9C6CfDE38A837902De4E5",
+  "contract_address": "0xa8513697719790BE49dEbE812f66830094852588",
+  "deploy_tx_hash": "0x14062834930610211aed4b1ee5396258f197ac8da893b6b8e18e7ecdfcb54441",
+  "block_number": null,
+  "verify_view": "count_by_band",
+  "verify_view_result": "{'BORDERLINE': 0, 'EXTRACTIVE': 0, 'FAIR': 0, 'PENDING': 0, 'PREDATORY': 0}",
+  "verified": true,
+  "contract_fix_note": "Author contract failed at runtime: DynArray()/TreeMap() were constructed directly (TypeError: this class can't be instantiated by user). Fixed with operator authorization by using TreeMap.get_or_insert_default(...) + in-place storage-proxy mutation instead of direct collection construction and copy-onto-self reassignment.",
+  "deployed_at_iso": "2026-06-23T13:31:46Z",
+  "contract_source_sha256": "0830a09cab6b4fa5b9975c298e8a19a3e604c9dbb8cf958dfad2387781344e8f",
+  "sdk_version": "genlayer-py==0.16.3"
+}
