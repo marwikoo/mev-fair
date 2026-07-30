@@ -1,1 +1,36 @@
-Ly8gVGhlIE1ldkZhaXJDb3VydCBoYXMgbm8gImxpc3QgYWxsIGJ1bmRsZXMiIHZpZXcsIHNvIHRoZSBVSSByZW1lbWJlcnMgdGhlCi8vIGJ1bmRsZV9pZHMgaXQgaGFzIHNlZW4gKGxvY2FsbHkpIHRvIHJlLXJlYWQgdGhlbSBvbiByZWZyZXNoLgpjb25zdCBLRVkgPSAibWV2ZmFpci5idW5kbGVzLnYxIjsKCmV4cG9ydCBpbnRlcmZhY2UgVHJhY2tlZEJ1bmRsZSB7CiAgYnVuZGxlSWQ6IHN0cmluZzsKICBibG9ja05vOiBudW1iZXI7CiAgYnVuZGxlSGFzaDogc3RyaW5nOwogIGxhYmVsOiBzdHJpbmc7CiAgYWRkZWRBdDogbnVtYmVyOwogIHN3YXBzQmxvYj86IHN0cmluZzsKICBvcmFjbGVVcmw/OiBzdHJpbmc7Cn0KCmV4cG9ydCBmdW5jdGlvbiBsb2FkVHJhY2tlZCgpOiBUcmFja2VkQnVuZGxlW10gewogIHRyeSB7CiAgICBjb25zdCByYXcgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbShLRVkpOwogICAgaWYgKCFyYXcpIHJldHVybiBbXTsKICAgIGNvbnN0IGFyciA9IEpTT04ucGFyc2UocmF3KTsKICAgIHJldHVybiBBcnJheS5pc0FycmF5KGFycikgPyBhcnIgOiBbXTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBbXTsKICB9Cn0KCmV4cG9ydCBmdW5jdGlvbiB0cmFja0J1bmRsZShiOiBUcmFja2VkQnVuZGxlKTogVHJhY2tlZEJ1bmRsZVtdIHsKICBjb25zdCBjdXIgPSBsb2FkVHJhY2tlZCgpLmZpbHRlcigoeCkgPT4geC5idW5kbGVJZCAhPT0gYi5idW5kbGVJZCk7CiAgY3VyLnVuc2hpZnQoYik7CiAgY29uc3QgbmV4dCA9IGN1ci5zbGljZSgwLCA2MCk7CiAgdHJ5IHsKICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKEtFWSwgSlNPTi5zdHJpbmdpZnkobmV4dCkpOwogIH0gY2F0Y2ggewogICAgLyogaWdub3JlIHF1b3RhICovCiAgfQogIHJldHVybiBuZXh0Owp9Cg==
+// The MevFairCourt has no "list all bundles" view, so the UI remembers the
+// bundle_ids it has seen (locally) to re-read them on refresh.
+const KEY = "mevfair.bundles.v1";
+
+export interface TrackedBundle {
+  bundleId: string;
+  blockNo: number;
+  bundleHash: string;
+  label: string;
+  addedAt: number;
+  swapsBlob?: string;
+  oracleUrl?: string;
+}
+
+export function loadTracked(): TrackedBundle[] {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (!raw) return [];
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? arr : [];
+  } catch {
+    return [];
+  }
+}
+
+export function trackBundle(b: TrackedBundle): TrackedBundle[] {
+  const cur = loadTracked().filter((x) => x.bundleId !== b.bundleId);
+  cur.unshift(b);
+  const next = cur.slice(0, 60);
+  try {
+    localStorage.setItem(KEY, JSON.stringify(next));
+  } catch {
+    /* ignore quota */
+  }
+  return next;
+}

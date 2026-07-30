@@ -1,1 +1,67 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CgovKioKICogTG93LWRlbnNpdHkgc3RhcmZpZWxkIGRyaWZ0aW5nIHNsb3dseSB1cHdhcmQtbGVmdCwgd2l0aCBhIGZhaW50IGN5YW4vbWFnZW50YQogKiB0aW50LiBQbGFpbiBjYW52YXMgKG5vIGxpYnJhcnkpLiBQYXVzZXMgb24gcmVkdWNlZC1tb3Rpb24gYW5kIHdoZW4gb2Zmc2NyZWVuLgogKi8KZXhwb3J0IGZ1bmN0aW9uIFN0YXJmaWVsZCh7IGNsYXNzTmFtZSB9OiB7IGNsYXNzTmFtZT86IHN0cmluZyB9KSB7CiAgY29uc3QgcmVmID0gdXNlUmVmPEhUTUxDYW52YXNFbGVtZW50IHwgbnVsbD4obnVsbCk7CiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IGN2ID0gcmVmLmN1cnJlbnQ7CiAgICBpZiAoIWN2KSByZXR1cm47CiAgICBjb25zdCBjdHggPSBjdi5nZXRDb250ZXh0KCIyZCIpOwogICAgaWYgKCFjdHgpIHJldHVybjsKICAgIGNvbnN0IHJlZHVjZWQgPSB3aW5kb3cubWF0Y2hNZWRpYSgiKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IHJlZHVjZSkiKS5tYXRjaGVzOwoKICAgIGxldCB3ID0gMCwKICAgICAgaCA9IDAsCiAgICAgIGRwciA9IE1hdGgubWluKHdpbmRvdy5kZXZpY2VQaXhlbFJhdGlvIHx8IDEsIDIpOwogICAgdHlwZSBTdGFyID0geyB4OiBudW1iZXI7IHk6IG51bWJlcjsgejogbnVtYmVyOyBjOiBzdHJpbmcgfTsKICAgIGxldCBzdGFyczogU3RhcltdID0gW107CgogICAgZnVuY3Rpb24gcmVzaXplKCkgewogICAgICBjb25zdCByID0gY3YhLmdldEJvdW5kaW5nQ2xpZW50UmVjdCgpOwogICAgICB3ID0gci53aWR0aDsKICAgICAgaCA9IHIuaGVpZ2h0OwogICAgICBjdiEud2lkdGggPSB3ICogZHByOwogICAgICBjdiEuaGVpZ2h0ID0gaCAqIGRwcjsKICAgICAgY3R4IS5zZXRUcmFuc2Zvcm0oZHByLCAwLCAwLCBkcHIsIDAsIDApOwogICAgICBjb25zdCBjb3VudCA9IE1hdGgucm91bmQoKHcgKiBoKSAvIDE0MDAwKTsgLy8gbG93IGRlbnNpdHkKICAgICAgc3RhcnMgPSBBcnJheS5mcm9tKHsgbGVuZ3RoOiBjb3VudCB9LCAoKSA9PiAoewogICAgICAgIHg6IE1hdGgucmFuZG9tKCkgKiB3LAogICAgICAgIHk6IE1hdGgucmFuZG9tKCkgKiBoLAogICAgICAgIHo6IE1hdGgucmFuZG9tKCkgKiAxICsgMC4zLAogICAgICAgIGM6IE1hdGgucmFuZG9tKCkgPiAwLjgyID8gIiNmZjAwNmUiIDogTWF0aC5yYW5kb20oKSA+IDAuNSA/ICIjMDBkNGZmIiA6ICIjYjhjNWQ2IiwKICAgICAgfSkpOwogICAgfQogICAgcmVzaXplKCk7CiAgICBjb25zdCBybyA9IG5ldyBSZXNpemVPYnNlcnZlcihyZXNpemUpOwogICAgcm8ub2JzZXJ2ZShjdik7CgogICAgbGV0IHJhZiA9IDA7CiAgICBmdW5jdGlvbiBmcmFtZSgpIHsKICAgICAgY3R4IS5jbGVhclJlY3QoMCwgMCwgdywgaCk7CiAgICAgIGZvciAoY29uc3Qgc3Qgb2Ygc3RhcnMpIHsKICAgICAgICBzdC54IC09IHN0LnogKiAwLjE4OwogICAgICAgIHN0LnkgLT0gc3QueiAqIDAuMTsKICAgICAgICBpZiAoc3QueCA8IDApIHN0LnggPSB3OwogICAgICAgIGlmIChzdC55IDwgMCkgc3QueSA9IGg7CiAgICAgICAgY3R4IS5nbG9iYWxBbHBoYSA9IDAuMjUgKyBzdC56ICogMC40OwogICAgICAgIGN0eCEuZmlsbFN0eWxlID0gc3QuYzsKICAgICAgICBjdHghLmJlZ2luUGF0aCgpOwogICAgICAgIGN0eCEuYXJjKHN0LngsIHN0LnksIHN0LnogKiAxLjEsIDAsIE1hdGguUEkgKiAyKTsKICAgICAgICBjdHghLmZpbGwoKTsKICAgICAgfQogICAgICBjdHghLmdsb2JhbEFscGhhID0gMTsKICAgICAgcmFmID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGZyYW1lKTsKICAgIH0KICAgIGlmICghcmVkdWNlZCkgcmFmID0gcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGZyYW1lKTsKICAgIGVsc2UgZnJhbWUoKTsgLy8gZHJhdyBhIHNpbmdsZSBzdGF0aWMgZnJhbWUKCiAgICByZXR1cm4gKCkgPT4gewogICAgICBjYW5jZWxBbmltYXRpb25GcmFtZShyYWYpOwogICAgICByby5kaXNjb25uZWN0KCk7CiAgICB9OwogIH0sIFtdKTsKICByZXR1cm4gPGNhbnZhcyByZWY9e3JlZn0gY2xhc3NOYW1lPXtjbGFzc05hbWV9IGFyaWEtaGlkZGVuPSJ0cnVlIiAvPjsKfQo=
+import { useEffect, useRef } from "react";
+
+/**
+ * Low-density starfield drifting slowly upward-left, with a faint cyan/magenta
+ * tint. Plain canvas (no library). Pauses on reduced-motion and when offscreen.
+ */
+export function Starfield({ className }: { className?: string }) {
+  const ref = useRef<HTMLCanvasElement | null>(null);
+  useEffect(() => {
+    const cv = ref.current;
+    if (!cv) return;
+    const ctx = cv.getContext("2d");
+    if (!ctx) return;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    let w = 0,
+      h = 0,
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+    type Star = { x: number; y: number; z: number; c: string };
+    let stars: Star[] = [];
+
+    function resize() {
+      const r = cv!.getBoundingClientRect();
+      w = r.width;
+      h = r.height;
+      cv!.width = w * dpr;
+      cv!.height = h * dpr;
+      ctx!.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const count = Math.round((w * h) / 14000); // low density
+      stars = Array.from({ length: count }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        z: Math.random() * 1 + 0.3,
+        c: Math.random() > 0.82 ? "#ff006e" : Math.random() > 0.5 ? "#00d4ff" : "#b8c5d6",
+      }));
+    }
+    resize();
+    const ro = new ResizeObserver(resize);
+    ro.observe(cv);
+
+    let raf = 0;
+    function frame() {
+      ctx!.clearRect(0, 0, w, h);
+      for (const st of stars) {
+        st.x -= st.z * 0.18;
+        st.y -= st.z * 0.1;
+        if (st.x < 0) st.x = w;
+        if (st.y < 0) st.y = h;
+        ctx!.globalAlpha = 0.25 + st.z * 0.4;
+        ctx!.fillStyle = st.c;
+        ctx!.beginPath();
+        ctx!.arc(st.x, st.y, st.z * 1.1, 0, Math.PI * 2);
+        ctx!.fill();
+      }
+      ctx!.globalAlpha = 1;
+      raf = requestAnimationFrame(frame);
+    }
+    if (!reduced) raf = requestAnimationFrame(frame);
+    else frame(); // draw a single static frame
+
+    return () => {
+      cancelAnimationFrame(raf);
+      ro.disconnect();
+    };
+  }, []);
+  return <canvas ref={ref} className={className} aria-hidden="true" />;
+}

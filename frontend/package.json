@@ -1,1 +1,33 @@
-ewogICJuYW1lIjogIm1ldi1mYWlyIiwKICAicHJpdmF0ZSI6IHRydWUsCiAgInZlcnNpb24iOiAiMS4wLjAiLAogICJ0eXBlIjogIm1vZHVsZSIsCiAgInNjcmlwdHMiOiB7CiAgICAiZGV2IjogInZpdGUiLAogICAgImJ1aWxkIjogInRzYyAtYiAmJiB2aXRlIGJ1aWxkIiwKICAgICJwcmV2aWV3IjogInZpdGUgcHJldmlldyIKICB9LAogICJkZXBlbmRlbmNpZXMiOiB7CiAgICAiQHJhaW5ib3ctbWUvcmFpbmJvd2tpdCI6ICJeMi4yLjgiLAogICAgIkB0YW5zdGFjay9yZWFjdC1xdWVyeSI6ICJeNS4xMDEuMSIsCiAgICAiZDMiOiAiNy45LjAiLAogICAgImdlbmxheWVyLWpzIjogIjEuMS44IiwKICAgICJnc2FwIjogIjMuMTIuNSIsCiAgICAia29udmEiOiAiOS4zLjIwIiwKICAgICJyZWFjdCI6ICIxOC4zLjEiLAogICAgInJlYWN0LWRvbSI6ICIxOC4zLjEiLAogICAgInJlYWN0LXJvdXRlci1kb20iOiAiXjYuMzAuNCIsCiAgICAidmllbSI6ICJeMi41My4xIiwKICAgICJ3YWdtaSI6ICJeMi4xOS41IiwKICAgICJ6ZG9nIjogIjEuMS4zIgogIH0sCiAgImRldkRlcGVuZGVuY2llcyI6IHsKICAgICJAdHlwZXMvZDMiOiAiNy40LjMiLAogICAgIkB0eXBlcy9yZWFjdCI6ICIxOC4zLjExIiwKICAgICJAdHlwZXMvcmVhY3QtZG9tIjogIjE4LjMuMCIsCiAgICAiQHZpdGVqcy9wbHVnaW4tcmVhY3QiOiAiNC4zLjIiLAogICAgInR5cGVzY3JpcHQiOiAiNS42LjIiLAogICAgInZpdGUiOiAiNS40LjgiCiAgfQp9Cg==
+{
+  "name": "mev-fair",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.8",
+    "@tanstack/react-query": "^5.101.1",
+    "d3": "7.9.0",
+    "genlayer-js": "1.1.8",
+    "gsap": "3.12.5",
+    "konva": "9.3.20",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "^6.30.4",
+    "viem": "^2.53.1",
+    "wagmi": "^2.19.5",
+    "zdog": "1.1.3"
+  },
+  "devDependencies": {
+    "@types/d3": "7.4.3",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.0",
+    "@vitejs/plugin-react": "4.3.2",
+    "typescript": "5.6.2",
+    "vite": "5.4.8"
+  }
+}

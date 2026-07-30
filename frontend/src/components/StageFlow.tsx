@@ -1,1 +1,102 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CmltcG9ydCAqIGFzIGQzIGZyb20gImQzIjsKCmNvbnN0IFNUQUdFUyA9IFsiSU5HRVNUIiwgIlBBUlNFIiwgIkNGTCIsICJTQ09SRSIsICJKVURHRSIsICJSRUJBVEUiLCAiQVBQRUFMIl07CgovKioKICogRDMgaG9yaXpvbnRhbCBwaXBlbGluZSBkaWFncmFtLiBTZXZlbiBzdGFnZSBub2RlcyBvbiBhIGN5YW7ihpJtYWdlbnRhIHJhaWwsCiAqIHdpdGggYSBtYXJrZXIgdGhhdCB0cmF2ZWxzIHRoZSByYWlsIG9uIGEgbG9vcCAodGhlIGJ1bmRsZSBwcm9ncmVzc2luZykuCiAqLwpleHBvcnQgZnVuY3Rpb24gU3RhZ2VGbG93KCkgewogIGNvbnN0IHJlZiA9IHVzZVJlZjxTVkdTVkdFbGVtZW50IHwgbnVsbD4obnVsbCk7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBjb25zdCBzdmcgPSBkMy5zZWxlY3QocmVmLmN1cnJlbnQpOwogICAgc3ZnLnNlbGVjdEFsbCgiKiIpLnJlbW92ZSgpOwogICAgY29uc3QgVyA9IDkyMDsKICAgIGNvbnN0IEggPSAxMzA7CiAgICBjb25zdCBwYWRYID0gNDA7CiAgICBjb25zdCB5ID0gNTY7CiAgICBzdmcuYXR0cigidmlld0JveCIsIGAwIDAgJHtXfSAke0h9YCkuYXR0cigicHJlc2VydmVBc3BlY3RSYXRpbyIsICJ4TWlkWU1pZCBtZWV0Iik7CgogICAgY29uc3QgZGVmcyA9IHN2Zy5hcHBlbmQoImRlZnMiKTsKICAgIGNvbnN0IGdyYWQgPSBkZWZzCiAgICAgIC5hcHBlbmQoImxpbmVhckdyYWRpZW50IikKICAgICAgLmF0dHIoImlkIiwgInJhaWxnIikKICAgICAgLmF0dHIoIngxIiwgIjAiKQogICAgICAuYXR0cigieDIiLCAiMSIpOwogICAgZ3JhZC5hcHBlbmQoInN0b3AiKS5hdHRyKCJvZmZzZXQiLCAiMCUiKS5hdHRyKCJzdG9wLWNvbG9yIiwgIiMwMGQ0ZmYiKTsKICAgIGdyYWQuYXBwZW5kKCJzdG9wIikuYXR0cigib2Zmc2V0IiwgIjU1JSIpLmF0dHIoInN0b3AtY29sb3IiLCAiIzdhNGZmZiIpOwogICAgZ3JhZC5hcHBlbmQoInN0b3AiKS5hdHRyKCJvZmZzZXQiLCAiMTAwJSIpLmF0dHIoInN0b3AtY29sb3IiLCAiI2ZmMDA2ZSIpOwoKICAgIGNvbnN0IHggPSBkMy5zY2FsZVBvaW50KCkuZG9tYWluKFNUQUdFUykucmFuZ2UoW3BhZFgsIFcgLSBwYWRYXSk7CgogICAgLy8gcmFpbAogICAgc3ZnCiAgICAgIC5hcHBlbmQoImxpbmUiKQogICAgICAuYXR0cigieDEiLCBwYWRYKQogICAgICAuYXR0cigieDIiLCBXIC0gcGFkWCkKICAgICAgLmF0dHIoInkxIiwgeSkKICAgICAgLmF0dHIoInkyIiwgeSkKICAgICAgLmF0dHIoInN0cm9rZSIsICJ1cmwoI3JhaWxnKSIpCiAgICAgIC5hdHRyKCJzdHJva2Utd2lkdGgiLCAyKQogICAgICAuYXR0cigib3BhY2l0eSIsIDAuNTUpOwoKICAgIC8vIG5vZGVzCiAgICBjb25zdCBnID0gc3ZnCiAgICAgIC5zZWxlY3RBbGwoImcubm9kZSIpCiAgICAgIC5kYXRhKFNUQUdFUykKICAgICAgLmVudGVyKCkKICAgICAgLmFwcGVuZCgiZyIpCiAgICAgIC5hdHRyKCJ0cmFuc2Zvcm0iLCAoZCkgPT4gYHRyYW5zbGF0ZSgke3goZCl9LCR7eX0pYCk7CiAgICBnLmFwcGVuZCgiY2lyY2xlIikKICAgICAgLmF0dHIoInIiLCA4KQogICAgICAuYXR0cigiZmlsbCIsICIjMDYwZjI0IikKICAgICAgLmF0dHIoInN0cm9rZSIsICIjMDBkNGZmIikKICAgICAgLmF0dHIoInN0cm9rZS13aWR0aCIsIDEuNik7CiAgICBnLmFwcGVuZCgiY2lyY2xlIikuYXR0cigiciIsIDMpLmF0dHIoImZpbGwiLCAiIzAwZDRmZiIpOwogICAgZy5hcHBlbmQoInRleHQiKQogICAgICAuYXR0cigieSIsIDI4KQogICAgICAuYXR0cigidGV4dC1hbmNob3IiLCAibWlkZGxlIikKICAgICAgLmF0dHIoImZpbGwiLCAiIzg1OTVhYyIpCiAgICAgIC5hdHRyKCJmb250LWZhbWlseSIsICJKZXRCcmFpbnMgTW9ubywgbW9ub3NwYWNlIikKICAgICAgLmF0dHIoImZvbnQtc2l6ZSIsIDEwKQogICAgICAuYXR0cigibGV0dGVyLXNwYWNpbmciLCAiMC4xMmVtIikKICAgICAgLnRleHQoKGQpID0+IGQpOwoKICAgIC8vIHRyYXZlbGxpbmcgbWFya2VyCiAgICBjb25zdCBtYXJrZXIgPSBzdmcKICAgICAgLmFwcGVuZCgiY2lyY2xlIikKICAgICAgLmF0dHIoInIiLCA1KQogICAgICAuYXR0cigiY3kiLCB5KQogICAgICAuYXR0cigiZmlsbCIsICIjZWFmMmZmIikKICAgICAgLmF0dHIoImZpbHRlciIsICJkcm9wLXNoYWRvdygwIDAgNnB4ICMwMGQ0ZmYpIik7CgogICAgbGV0IHN0b3BwZWQgPSBmYWxzZTsKICAgIGZ1bmN0aW9uIGxvb3AoKSB7CiAgICAgIGlmIChzdG9wcGVkKSByZXR1cm47CiAgICAgIG1hcmtlcgogICAgICAgIC5hdHRyKCJjeCIsIHBhZFgpCiAgICAgICAgLmF0dHIoIm9wYWNpdHkiLCAwKQogICAgICAgIC50cmFuc2l0aW9uKCkKICAgICAgICAuZHVyYXRpb24oMzAwKQogICAgICAgIC5hdHRyKCJvcGFjaXR5IiwgMSkKICAgICAgICAudHJhbnNpdGlvbigpCiAgICAgICAgLmR1cmF0aW9uKDM2MDApCiAgICAgICAgLmVhc2UoZDMuZWFzZUN1YmljSW5PdXQpCiAgICAgICAgLmF0dHIoImN4IiwgVyAtIHBhZFgpCiAgICAgICAgLnRyYW5zaXRpb24oKQogICAgICAgIC5kdXJhdGlvbigzMDApCiAgICAgICAgLmF0dHIoIm9wYWNpdHkiLCAwKQogICAgICAgIC5vbigiZW5kIiwgbG9vcCk7CiAgICB9CiAgICBpZiAoIXdpbmRvdy5tYXRjaE1lZGlhKCIocHJlZmVycy1yZWR1Y2VkLW1vdGlvbjogcmVkdWNlKSIpLm1hdGNoZXMpIGxvb3AoKTsKCiAgICByZXR1cm4gKCkgPT4gewogICAgICBzdG9wcGVkID0gdHJ1ZTsKICAgICAgc3ZnLnNlbGVjdEFsbCgiKiIpLmludGVycnVwdCgpOwogICAgfTsKICB9LCBbXSk7CgogIHJldHVybiA8c3ZnIHJlZj17cmVmfSBzdHlsZT17eyB3aWR0aDogIjEwMCUiLCBoZWlnaHQ6ICJhdXRvIiwgZGlzcGxheTogImJsb2NrIiB9fSBhcmlhLWhpZGRlbj0idHJ1ZSIgLz47Cn0K
+import { useEffect, useRef } from "react";
+import * as d3 from "d3";
+
+const STAGES = ["INGEST", "PARSE", "CFL", "SCORE", "JUDGE", "REBATE", "APPEAL"];
+
+/**
+ * D3 horizontal pipeline diagram. Seven stage nodes on a cyanâ†’magenta rail,
+ * with a marker that travels the rail on a loop (the bundle progressing).
+ */
+export function StageFlow() {
+  const ref = useRef<SVGSVGElement | null>(null);
+
+  useEffect(() => {
+    const svg = d3.select(ref.current);
+    svg.selectAll("*").remove();
+    const W = 920;
+    const H = 130;
+    const padX = 40;
+    const y = 56;
+    svg.attr("viewBox", `0 0 ${W} ${H}`).attr("preserveAspectRatio", "xMidYMid meet");
+
+    const defs = svg.append("defs");
+    const grad = defs
+      .append("linearGradient")
+      .attr("id", "railg")
+      .attr("x1", "0")
+      .attr("x2", "1");
+    grad.append("stop").attr("offset", "0%").attr("stop-color", "#00d4ff");
+    grad.append("stop").attr("offset", "55%").attr("stop-color", "#7a4fff");
+    grad.append("stop").attr("offset", "100%").attr("stop-color", "#ff006e");
+
+    const x = d3.scalePoint().domain(STAGES).range([padX, W - padX]);
+
+    // rail
+    svg
+      .append("line")
+      .attr("x1", padX)
+      .attr("x2", W - padX)
+      .attr("y1", y)
+      .attr("y2", y)
+      .attr("stroke", "url(#railg)")
+      .attr("stroke-width", 2)
+      .attr("opacity", 0.55);
+
+    // nodes
+    const g = svg
+      .selectAll("g.node")
+      .data(STAGES)
+      .enter()
+      .append("g")
+      .attr("transform", (d) => `translate(${x(d)},${y})`);
+    g.append("circle")
+      .attr("r", 8)
+      .attr("fill", "#060f24")
+      .attr("stroke", "#00d4ff")
+      .attr("stroke-width", 1.6);
+    g.append("circle").attr("r", 3).attr("fill", "#00d4ff");
+    g.append("text")
+      .attr("y", 28)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#8595ac")
+      .attr("font-family", "JetBrains Mono, monospace")
+      .attr("font-size", 10)
+      .attr("letter-spacing", "0.12em")
+      .text((d) => d);
+
+    // travelling marker
+    const marker = svg
+      .append("circle")
+      .attr("r", 5)
+      .attr("cy", y)
+      .attr("fill", "#eaf2ff")
+      .attr("filter", "drop-shadow(0 0 6px #00d4ff)");
+
+    let stopped = false;
+    function loop() {
+      if (stopped) return;
+      marker
+        .attr("cx", padX)
+        .attr("opacity", 0)
+        .transition()
+        .duration(300)
+        .attr("opacity", 1)
+        .transition()
+        .duration(3600)
+        .ease(d3.easeCubicInOut)
+        .attr("cx", W - padX)
+        .transition()
+        .duration(300)
+        .attr("opacity", 0)
+        .on("end", loop);
+    }
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) loop();
+
+    return () => {
+      stopped = true;
+      svg.selectAll("*").interrupt();
+    };
+  }, []);
+
+  return <svg ref={ref} style={{ width: "100%", height: "auto", display: "block" }} aria-hidden="true" />;
+}

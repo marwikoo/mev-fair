@@ -1,1 +1,39 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB7IGdzYXAgfSBmcm9tICJnc2FwIjsKCi8qKgogKiBSZXZlYWxzIGRlc2NlbmRhbnRzIG1hcmtlZCBgLnJldmVhbGAgd2l0aCBhIGhlYXZ5IGZhZGUtdXAgd2hlbiB0aGUgc2VjdGlvbgogKiBlbnRlcnMgdGhlIHZpZXdwb3J0LiBHU0FQLWRyaXZlbiAodHJhbnNmb3JtK29wYWNpdHkgb25seSk7IHRyaWdnZXJlZCBieQogKiBJbnRlcnNlY3Rpb25PYnNlcnZlciAobm8gc2Nyb2xsIGxpc3RlbmVycykuIFJlc3BlY3RzIHJlZHVjZWQtbW90aW9uLgogKi8KZXhwb3J0IGZ1bmN0aW9uIHVzZVJldmVhbDxUIGV4dGVuZHMgSFRNTEVsZW1lbnQgPSBIVE1MRGl2RWxlbWVudD4oKSB7CiAgY29uc3QgcmVmID0gdXNlUmVmPFQgfCBudWxsPihudWxsKTsKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgZWwgPSByZWYuY3VycmVudDsKICAgIGlmICghZWwpIHJldHVybjsKICAgIGlmICh3aW5kb3cubWF0Y2hNZWRpYSgiKHByZWZlcnMtcmVkdWNlZC1tb3Rpb246IHJlZHVjZSkiKS5tYXRjaGVzKSByZXR1cm47CiAgICBjb25zdCB0YXJnZXRzID0gZWwucXVlcnlTZWxlY3RvckFsbDxIVE1MRWxlbWVudD4oIi5yZXZlYWwiKTsKICAgIGlmICghdGFyZ2V0cy5sZW5ndGgpIHJldHVybjsKCiAgICBjb25zdCBpbyA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlcigKICAgICAgKGVudHJpZXMsIG9icykgPT4gewogICAgICAgIGVudHJpZXMuZm9yRWFjaCgoZSkgPT4gewogICAgICAgICAgaWYgKCFlLmlzSW50ZXJzZWN0aW5nKSByZXR1cm47CiAgICAgICAgICBjb25zdCBpdGVtcyA9IEFycmF5LmZyb20oZS50YXJnZXQucXVlcnlTZWxlY3RvckFsbDxIVE1MRWxlbWVudD4oIi5yZXZlYWwiKSk7CiAgICAgICAgICBnc2FwLnRvKGl0ZW1zLCB7CiAgICAgICAgICAgIG9wYWNpdHk6IDEsCiAgICAgICAgICAgIHk6IDAsCiAgICAgICAgICAgIGR1cmF0aW9uOiAwLjg1LAogICAgICAgICAgICBzdGFnZ2VyOiAwLjA4LAogICAgICAgICAgICBlYXNlOiAicG93ZXIzLm91dCIsCiAgICAgICAgICB9KTsKICAgICAgICAgIG9icy51bm9ic2VydmUoZS50YXJnZXQpOwogICAgICAgIH0pOwogICAgICB9LAogICAgICB7IHRocmVzaG9sZDogMC4xNiB9CiAgICApOwogICAgaW8ub2JzZXJ2ZShlbCk7CiAgICByZXR1cm4gKCkgPT4gaW8uZGlzY29ubmVjdCgpOwogIH0sIFtdKTsKICByZXR1cm4gcmVmOwp9Cg==
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+
+/**
+ * Reveals descendants marked `.reveal` with a heavy fade-up when the section
+ * enters the viewport. GSAP-driven (transform+opacity only); triggered by
+ * IntersectionObserver (no scroll listeners). Respects reduced-motion.
+ */
+export function useReveal<T extends HTMLElement = HTMLDivElement>() {
+  const ref = useRef<T | null>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const targets = el.querySelectorAll<HTMLElement>(".reveal");
+    if (!targets.length) return;
+
+    const io = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const items = Array.from(e.target.querySelectorAll<HTMLElement>(".reveal"));
+          gsap.to(items, {
+            opacity: 1,
+            y: 0,
+            duration: 0.85,
+            stagger: 0.08,
+            ease: "power3.out",
+          });
+          obs.unobserve(e.target);
+        });
+      },
+      { threshold: 0.16 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return ref;
+}

@@ -1,1 +1,4 @@
-ZGVjbGFyZSBtb2R1bGUgIioubW9kdWxlLmNzcyIgewogIGNvbnN0IGNsYXNzZXM6IHsgcmVhZG9ubHkgW2tleTogc3RyaW5nXTogc3RyaW5nIH07CiAgZXhwb3J0IGRlZmF1bHQgY2xhc3NlczsKfQo=
+declare module "*.module.css" {
+  const classes: { readonly [key: string]: string };
+  export default classes;
+}

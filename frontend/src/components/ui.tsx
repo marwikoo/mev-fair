@@ -1,1 +1,54 @@
-aW1wb3J0IHR5cGUgeyBCdXR0b25IVE1MQXR0cmlidXRlcywgSFRNTEF0dHJpYnV0ZXMsIFJlYWN0Tm9kZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgSWNvbkFycm93IH0gZnJvbSAiLi9pY29ucyI7Cgp0eXBlIFZhcmlhbnQgPSAicHJpbWFyeSIgfCAibWFnZW50YSIgfCAiZ2hvc3QiOwppbnRlcmZhY2UgQnRuUHJvcHMgZXh0ZW5kcyBCdXR0b25IVE1MQXR0cmlidXRlczxIVE1MQnV0dG9uRWxlbWVudD4gewogIHZhcmlhbnQ/OiBWYXJpYW50OwogIGFycm93PzogYm9vbGVhbjsKICBibG9jaz86IGJvb2xlYW47CiAgc20/OiBib29sZWFuOwp9CgpleHBvcnQgZnVuY3Rpb24gQnV0dG9uKHsgdmFyaWFudCA9ICJwcmltYXJ5IiwgYXJyb3csIGJsb2NrLCBzbSwgY2hpbGRyZW4sIGNsYXNzTmFtZSA9ICIiLCAuLi5yZXN0IH06IEJ0blByb3BzKSB7CiAgY29uc3QgdiA9IHZhcmlhbnQgPT09ICJwcmltYXJ5IiA/ICIiIDogdmFyaWFudDsKICByZXR1cm4gKAogICAgPGJ1dHRvbiBjbGFzc05hbWU9e2BidG4gJHt2fSAke2Jsb2NrID8gImJsb2NrIiA6ICIifSAke3NtID8gInNtIiA6ICIifSAke2NsYXNzTmFtZX1gfSB7Li4ucmVzdH0+CiAgICAgIDxzcGFuPntjaGlsZHJlbn08L3NwYW4+CiAgICAgIHthcnJvdyAmJiAoCiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJpY29DaXJjbGUiPgogICAgICAgICAgPEljb25BcnJvdyBzaXplPXsxM30gLz4KICAgICAgICA8L3NwYW4+CiAgICAgICl9CiAgICA8L2J1dHRvbj4KICApOwp9Cgpjb25zdCBCQU5EX0xBQkVMOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogIEZBSVI6ICJmYWlyIiwKICBCT1JERVJMSU5FOiAiYm9yZGVybGluZSIsCiAgRVhUUkFDVElWRTogImV4dHJhY3RpdmUiLAogIFBSRURBVE9SWTogInByZWRhdG9yeSIsCiAgUEVORElORzogInBlbmRpbmciLAogICIiOiAicGVuZGluZyIsCn07CgpleHBvcnQgZnVuY3Rpb24gQmFuZFBpbGwoeyBiYW5kIH06IHsgYmFuZDogc3RyaW5nIH0pIHsKICBjb25zdCBrZXkgPSAoYmFuZCB8fCAiUEVORElORyIpLnRvVXBwZXJDYXNlKCk7CiAgcmV0dXJuICgKICAgIDxzcGFuIGNsYXNzTmFtZT0iYmFuZHBpbGwiIHN0eWxlPXt7IFsiLS1iYW5kYyIgYXMgYW55XTogYHZhcigtLWJhbmQtJHtrZXl9KWAgfX0+CiAgICAgIHtCQU5EX0xBQkVMW2tleV0gPz8ga2V5LnRvTG93ZXJDYXNlKCl9CiAgICA8L3NwYW4+CiAgKTsKfQoKZXhwb3J0IGZ1bmN0aW9uIEV5ZWJyb3coeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdE5vZGUgfSkgewogIHJldHVybiA8c3BhbiBjbGFzc05hbWU9ImV5ZWJyb3ciPntjaGlsZHJlbn08L3NwYW4+Owp9CgpleHBvcnQgZnVuY3Rpb24gR2xhc3NDYXJkKHsgY2hpbGRyZW4sIGNsYXNzTmFtZSA9ICIiLCAuLi5yZXN0IH06IHsgY2hpbGRyZW46IFJlYWN0Tm9kZTsgY2xhc3NOYW1lPzogc3RyaW5nIH0gJiBIVE1MQXR0cmlidXRlczxIVE1MRGl2RWxlbWVudD4pIHsKICByZXR1cm4gKAogICAgPGRpdiBjbGFzc05hbWU9e2BnbGFzcyAke2NsYXNzTmFtZX1gfSB7Li4ucmVzdH0+CiAgICAgIHtjaGlsZHJlbn0KICAgIDwvZGl2PgogICk7Cn0K
+import type { ButtonHTMLAttributes, HTMLAttributes, ReactNode } from "react";
+import { IconArrow } from "./icons";
+
+type Variant = "primary" | "magenta" | "ghost";
+interface BtnProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: Variant;
+  arrow?: boolean;
+  block?: boolean;
+  sm?: boolean;
+}
+
+export function Button({ variant = "primary", arrow, block, sm, children, className = "", ...rest }: BtnProps) {
+  const v = variant === "primary" ? "" : variant;
+  return (
+    <button className={`btn ${v} ${block ? "block" : ""} ${sm ? "sm" : ""} ${className}`} {...rest}>
+      <span>{children}</span>
+      {arrow && (
+        <span className="icoCircle">
+          <IconArrow size={13} />
+        </span>
+      )}
+    </button>
+  );
+}
+
+const BAND_LABEL: Record<string, string> = {
+  FAIR: "fair",
+  BORDERLINE: "borderline",
+  EXTRACTIVE: "extractive",
+  PREDATORY: "predatory",
+  PENDING: "pending",
+  "": "pending",
+};
+
+export function BandPill({ band }: { band: string }) {
+  const key = (band || "PENDING").toUpperCase();
+  return (
+    <span className="bandpill" style={{ ["--bandc" as any]: `var(--band-${key})` }}>
+      {BAND_LABEL[key] ?? key.toLowerCase()}
+    </span>
+  );
+}
+
+export function Eyebrow({ children }: { children: ReactNode }) {
+  return <span className="eyebrow">{children}</span>;
+}
+
+export function GlassCard({ children, className = "", ...rest }: { children: ReactNode; className?: string } & HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div className={`glass ${className}`} {...rest}>
+      {children}
+    </div>
+  );
+}

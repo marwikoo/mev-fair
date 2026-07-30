@@ -1,1 +1,79 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYgfSBmcm9tICJyZWFjdCI7CmltcG9ydCBLb252YSBmcm9tICJrb252YSI7Cgpjb25zdCBCQU5EX0NPTE9SOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogIEZBSVI6ICIjMDBkNGZmIiwKICBCT1JERVJMSU5FOiAiI2ZmYzI0YiIsCiAgRVhUUkFDVElWRTogIiNmZjhhM2QiLAogIFBSRURBVE9SWTogIiNmZjAwNmUiLAogIFBFTkRJTkc6ICIjNmE3YTkyIiwKfTsKCi8qKgogKiBLb252YSByYWRpYWwgZ2F1Z2U6IHN3ZWVwcyBhbiBhcmMgcHJvcG9ydGlvbmFsIHRvIGV4dHJhY3RlZCBicHMgKDAuLjMwMCsKICogY2xhbXBlZCksIHRpbnRlZCBieSBiYW5kLiBBbmltYXRlcyB0byB0aGUgdmFsdWUgb24gY2hhbmdlLgogKi8KZXhwb3J0IGZ1bmN0aW9uIEJwc0dhdWdlKHsgYnBzLCBiYW5kLCBzaXplID0gMTUwIH06IHsgYnBzOiBudW1iZXI7IGJhbmQ6IHN0cmluZzsgc2l6ZT86IG51bWJlciB9KSB7CiAgY29uc3QgcmVmID0gdXNlUmVmPEhUTUxEaXZFbGVtZW50IHwgbnVsbD4obnVsbCk7CiAgY29uc3QgYXJjUmVmID0gdXNlUmVmPEtvbnZhLkFyYyB8IG51bGw+KG51bGwpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgZWwgPSByZWYuY3VycmVudDsKICAgIGlmICghZWwpIHJldHVybjsKICAgIGNvbnN0IHN0YWdlID0gbmV3IEtvbnZhLlN0YWdlKHsgY29udGFpbmVyOiBlbCwgd2lkdGg6IHNpemUsIGhlaWdodDogc2l6ZSB9KTsKICAgIGNvbnN0IGxheWVyID0gbmV3IEtvbnZhLkxheWVyKCk7CiAgICBzdGFnZS5hZGQobGF5ZXIpOwogICAgY29uc3QgY3ggPSBzaXplIC8gMjsKICAgIGNvbnN0IGN5ID0gc2l6ZSAvIDI7CiAgICBjb25zdCByYWRpdXMgPSBzaXplIC8gMiAtIDEyOwoKICAgIC8vIHRyYWNrCiAgICBsYXllci5hZGQoCiAgICAgIG5ldyBLb252YS5BcmMoewogICAgICAgIHg6IGN4LAogICAgICAgIHk6IGN5LAogICAgICAgIGlubmVyUmFkaXVzOiByYWRpdXMgLSA4LAogICAgICAgIG91dGVyUmFkaXVzOiByYWRpdXMsCiAgICAgICAgYW5nbGU6IDI3MCwKICAgICAgICByb3RhdGlvbjogMTM1LAogICAgICAgIGZpbGw6ICJyZ2JhKDE4NCwxOTcsMjE0LDAuMTIpIiwKICAgICAgfSkKICAgICk7CiAgICBjb25zdCBhcmMgPSBuZXcgS29udmEuQXJjKHsKICAgICAgeDogY3gsCiAgICAgIHk6IGN5LAogICAgICBpbm5lclJhZGl1czogcmFkaXVzIC0gOCwKICAgICAgb3V0ZXJSYWRpdXM6IHJhZGl1cywKICAgICAgYW5nbGU6IDAsCiAgICAgIHJvdGF0aW9uOiAxMzUsCiAgICAgIGZpbGw6IEJBTkRfQ09MT1JbYmFuZF0gPz8gIiMwMGQ0ZmYiLAogICAgICBzaGFkb3dDb2xvcjogQkFORF9DT0xPUltiYW5kXSA/PyAiIzAwZDRmZiIsCiAgICAgIHNoYWRvd0JsdXI6IDEyLAogICAgICBzaGFkb3dPcGFjaXR5OiAwLjYsCiAgICB9KTsKICAgIGFyY1JlZi5jdXJyZW50ID0gYXJjOwogICAgbGF5ZXIuYWRkKGFyYyk7CiAgICBsYXllci5kcmF3KCk7CgogICAgY29uc3QgdGFyZ2V0ID0gTWF0aC5tYXgoMCwgTWF0aC5taW4oMSwgYnBzIC8gMzAwKSkgKiAyNzA7CiAgICBjb25zdCByZWR1Y2VkID0gd2luZG93Lm1hdGNoTWVkaWEoIihwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiByZWR1Y2UpIikubWF0Y2hlczsKICAgIGlmIChyZWR1Y2VkKSB7CiAgICAgIGFyYy5hbmdsZSh0YXJnZXQpOwogICAgICBsYXllci5kcmF3KCk7CiAgICB9IGVsc2UgewogICAgICBjb25zdCBhbmltID0gbmV3IEtvbnZhLkFuaW1hdGlvbigoZnJhbWUpID0+IHsKICAgICAgICBpZiAoIWZyYW1lKSByZXR1cm47CiAgICAgICAgY29uc3QgdCA9IE1hdGgubWluKDEsIGZyYW1lLnRpbWUgLyA4MDApOwogICAgICAgIGFyYy5hbmdsZSh0YXJnZXQgKiAoMSAtIE1hdGgucG93KDEgLSB0LCAzKSkpOwogICAgICAgIGlmICh0ID49IDEpIGFuaW0uc3RvcCgpOwogICAgICB9LCBsYXllcik7CiAgICAgIGFuaW0uc3RhcnQoKTsKICAgIH0KCiAgICByZXR1cm4gKCkgPT4gewogICAgICBzdGFnZS5kZXN0cm95KCk7CiAgICB9OwogIH0sIFticHMsIGJhbmQsIHNpemVdKTsKCiAgcmV0dXJuIDxkaXYgcmVmPXtyZWZ9IHN0eWxlPXt7IHdpZHRoOiBzaXplLCBoZWlnaHQ6IHNpemUgfX0gYXJpYS1oaWRkZW49InRydWUiIC8+Owp9Cg==
+import { useEffect, useRef } from "react";
+import Konva from "konva";
+
+const BAND_COLOR: Record<string, string> = {
+  FAIR: "#00d4ff",
+  BORDERLINE: "#ffc24b",
+  EXTRACTIVE: "#ff8a3d",
+  PREDATORY: "#ff006e",
+  PENDING: "#6a7a92",
+};
+
+/**
+ * Konva radial gauge: sweeps an arc proportional to extracted bps (0..300+
+ * clamped), tinted by band. Animates to the value on change.
+ */
+export function BpsGauge({ bps, band, size = 150 }: { bps: number; band: string; size?: number }) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const arcRef = useRef<Konva.Arc | null>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const stage = new Konva.Stage({ container: el, width: size, height: size });
+    const layer = new Konva.Layer();
+    stage.add(layer);
+    const cx = size / 2;
+    const cy = size / 2;
+    const radius = size / 2 - 12;
+
+    // track
+    layer.add(
+      new Konva.Arc({
+        x: cx,
+        y: cy,
+        innerRadius: radius - 8,
+        outerRadius: radius,
+        angle: 270,
+        rotation: 135,
+        fill: "rgba(184,197,214,0.12)",
+      })
+    );
+    const arc = new Konva.Arc({
+      x: cx,
+      y: cy,
+      innerRadius: radius - 8,
+      outerRadius: radius,
+      angle: 0,
+      rotation: 135,
+      fill: BAND_COLOR[band] ?? "#00d4ff",
+      shadowColor: BAND_COLOR[band] ?? "#00d4ff",
+      shadowBlur: 12,
+      shadowOpacity: 0.6,
+    });
+    arcRef.current = arc;
+    layer.add(arc);
+    layer.draw();
+
+    const target = Math.max(0, Math.min(1, bps / 300)) * 270;
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) {
+      arc.angle(target);
+      layer.draw();
+    } else {
+      const anim = new Konva.Animation((frame) => {
+        if (!frame) return;
+        const t = Math.min(1, frame.time / 800);
+        arc.angle(target * (1 - Math.pow(1 - t, 3)));
+        if (t >= 1) anim.stop();
+      }, layer);
+      anim.start();
+    }
+
+    return () => {
+      stage.destroy();
+    };
+  }, [bps, band, size]);
+
+  return <div ref={ref} style={{ width: size, height: size }} aria-hidden="true" />;
+}

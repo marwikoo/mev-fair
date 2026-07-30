@@ -1,1 +1,44 @@
-aW1wb3J0IHsgZGVmaW5lQ29uZmlnIH0gZnJvbSAidml0ZSI7CmltcG9ydCByZWFjdCBmcm9tICJAdml0ZWpzL3BsdWdpbi1yZWFjdCI7CgovLyBQZWVsIHRoZSBsYXJnZSAqc3RhdGljKiBsaWJyYXJpZXMgaW50byB0aGVpciBvd24gY2h1bmtzIHNvIHRoZSBlbnRyeSBidW5kbGUKLy8gc3RheXMgdW5kZXIgVml0ZSdzIDUwMCBrQiB3YXJuaW5nIHRocmVzaG9sZC4gUmFpbmJvd0tpdCAvIFdhbGxldENvbm5lY3QgLwovLyBSZW93biBrZWVwIHRoZWlyIGJ1aWx0LWluIHBlci13YWxsZXQsIHBlci1sb2NhbGUgZHluYW1pYyBzcGxpdHRpbmcsIHNvIHRoZXkKLy8gYXJlIGRlbGliZXJhdGVseSBsZWZ0IHVuZ3JvdXBlZC4gd2FnbWkgaXMgZm9sZGVkIGludG8gdGhlIGNyeXB0byBncm91cAovLyBiZWNhdXNlIGl0IHNoYXJlcyBhIGN5Y2xpYyBpbXBvcnQgZ3JhcGggd2l0aCB2aWVtL294IChhIHN0YW5kYWxvbmUgd2FnbWkKLy8gY2h1bmsgdHJpZ2dlcnMgYSAiQ2lyY3VsYXIgY2h1bmsiIHdhcm5pbmcpLgpleHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoewogIGJhc2U6ICIvIiwKICBjYWNoZURpcjogIi52aXRlX2NhY2hlIiwKICBwbHVnaW5zOiBbcmVhY3QoKV0sCiAgc2VydmVyOiB7IHBvcnQ6IDUzODAgfSwKICBwcmV2aWV3OiB7IHBvcnQ6IDUzOTIgfSwKICBidWlsZDogewogICAgcm9sbHVwT3B0aW9uczogewogICAgICBvdXRwdXQ6IHsKICAgICAgICBtYW51YWxDaHVua3MoaWQpIHsKICAgICAgICAgIGlmICghaWQuaW5jbHVkZXMoIm5vZGVfbW9kdWxlcyIpKSByZXR1cm47CiAgICAgICAgICBpZiAoaWQuaW5jbHVkZXMoIi9yZWFjdC1kb20vIikgfHwgaWQuaW5jbHVkZXMoIi9zY2hlZHVsZXIvIikpIHJldHVybiAicmVhY3QtZG9tIjsKICAgICAgICAgIGlmIChpZC5pbmNsdWRlcygiL3JlYWN0LyIpKSByZXR1cm4gInJlYWN0IjsKICAgICAgICAgIGlmIChpZC5pbmNsdWRlcygiL2dlbmxheWVyLWpzLyIpKSByZXR1cm4gImdlbmxheWVyIjsKICAgICAgICAgIGlmIChpZC5pbmNsdWRlcygiL2QzLSIpIHx8IGlkLmluY2x1ZGVzKCIvZDMvIikpIHJldHVybiAiZDMiOwogICAgICAgICAgaWYgKGlkLmluY2x1ZGVzKCIva29udmEvIikpIHJldHVybiAia29udmEiOwogICAgICAgICAgaWYgKGlkLmluY2x1ZGVzKCIvZ3NhcC8iKSkgcmV0dXJuICJnc2FwIjsKICAgICAgICAgIGlmICgKICAgICAgICAgICAgaWQuaW5jbHVkZXMoIi92aWVtLyIpIHx8CiAgICAgICAgICAgIGlkLmluY2x1ZGVzKCIvYWJpdHlwZS8iKSB8fAogICAgICAgICAgICBpZC5pbmNsdWRlcygiL294LyIpIHx8CiAgICAgICAgICAgIGlkLmluY2x1ZGVzKCIvQG5vYmxlLyIpIHx8CiAgICAgICAgICAgIGlkLmluY2x1ZGVzKCIvQHNjdXJlLyIpIHx8CiAgICAgICAgICAgIGlkLmluY2x1ZGVzKCIvQGFkcmFmZnkvIikgfHwKICAgICAgICAgICAgaWQuaW5jbHVkZXMoIi93YWdtaS8iKSB8fAogICAgICAgICAgICBpZC5pbmNsdWRlcygiL0B3YWdtaS8iKQogICAgICAgICAgKSB7CiAgICAgICAgICAgIHJldHVybiAiY3J5cHRvIjsKICAgICAgICAgIH0KICAgICAgICAgIGlmIChpZC5pbmNsdWRlcygiL0B0YW5zdGFjay8iKSkgcmV0dXJuICJ0YW5zdGFjayI7CiAgICAgICAgfSwKICAgICAgfSwKICAgIH0sCiAgfSwKfSk7Cg==
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// Peel the large *static* libraries into their own chunks so the entry bundle
+// stays under Vite's 500 kB warning threshold. RainbowKit / WalletConnect /
+// Reown keep their built-in per-wallet, per-locale dynamic splitting, so they
+// are deliberately left ungrouped. wagmi is folded into the crypto group
+// because it shares a cyclic import graph with viem/ox (a standalone wagmi
+// chunk triggers a "Circular chunk" warning).
+export default defineConfig({
+  base: "/",
+  cacheDir: ".vite_cache",
+  plugins: [react()],
+  server: { port: 5380 },
+  preview: { port: 5392 },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+          if (id.includes("/react-dom/") || id.includes("/scheduler/")) return "react-dom";
+          if (id.includes("/react/")) return "react";
+          if (id.includes("/genlayer-js/")) return "genlayer";
+          if (id.includes("/d3-") || id.includes("/d3/")) return "d3";
+          if (id.includes("/konva/")) return "konva";
+          if (id.includes("/gsap/")) return "gsap";
+          if (
+            id.includes("/viem/") ||
+            id.includes("/abitype/") ||
+            id.includes("/ox/") ||
+            id.includes("/@noble/") ||
+            id.includes("/@scure/") ||
+            id.includes("/@adraffy/") ||
+            id.includes("/wagmi/") ||
+            id.includes("/@wagmi/")
+          ) {
+            return "crypto";
+          }
+          if (id.includes("/@tanstack/")) return "tanstack";
+        },
+      },
+    },
+  },
+});

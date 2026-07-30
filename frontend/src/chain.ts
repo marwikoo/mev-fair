@@ -1,1 +1,11 @@
-Ly8gR2VuTGF5ZXIgU3R1ZGlvbmV0IHdpcmluZyBmb3IgdGhlIE1ldkZhaXJDb3VydCByZWJhdGUgY291cnQuCi8vIFB1YmxpYyBjb25maWd1cmF0aW9uIG9ubHkg4oCUIHZhbHVlcyBjb21lIGZyb20gdGhlIGNvbW1pdHRlZCAuZW52IChzZWUKLy8gLmVudi5leGFtcGxlKTsgdGhlIGZhbGxiYWNrcyBrZWVwIHRoZSBkZXBsb3llZCBhZGRyZXNzIGZpeGVkIGlmIGEgYnVpbGQgcnVucwovLyB3aXRob3V0IGFuIGVudiBmaWxlLiBDb250cmFjdCBkZXBsb3llZCAyMDI2LTA2LTIzIOKAlCBzZWUgYmFja2VuZC9kZXBsb3ltZW50Lmpzb24uCmV4cG9ydCBjb25zdCBHRU5MQVlFUl9DSEFJTl9JRCA9IE51bWJlcihpbXBvcnQubWV0YS5lbnYuVklURV9DSEFJTl9JRCA/PyA2MTk5OSk7CmV4cG9ydCBjb25zdCBHRU5MQVlFUl9SUENfVVJMID0KICBpbXBvcnQubWV0YS5lbnYuVklURV9SUENfVVJMID8/ICJodHRwczovL3N0dWRpby5nZW5sYXllci5jb20vYXBpIjsKCi8vIE1ldkZhaXJDb3VydCAoMDMtdmVsYSAvIG1ldi1mYWlyKSBvbiBob3N0ZWQgc3R1ZGlvbmV0LgpleHBvcnQgY29uc3QgQ09OVFJBQ1RfQUREUkVTUyA9IChpbXBvcnQubWV0YS5lbnYuVklURV9DT05UUkFDVF9BRERSRVNTID8/CiAgIjB4YTg1MTM2OTc3MTk3OTBCRTQ5ZEViRTgxMmY2NjgzMDA5NDg1MjU4OCIpIGFzIGAweCR7c3RyaW5nfWA7Cg==
+// GenLayer Studionet wiring for the MevFairCourt rebate court.
+// Public configuration only â€” values come from the committed .env (see
+// .env.example); the fallbacks keep the deployed address fixed if a build runs
+// without an env file. Contract deployed 2026-06-23 â€” see backend/deployment.json.
+export const GENLAYER_CHAIN_ID = Number(import.meta.env.VITE_CHAIN_ID ?? 61999);
+export const GENLAYER_RPC_URL =
+  import.meta.env.VITE_RPC_URL ?? "https://studio.genlayer.com/api";
+
+// MevFairCourt (03-vela / mev-fair) on hosted studionet.
+export const CONTRACT_ADDRESS = (import.meta.env.VITE_CONTRACT_ADDRESS ??
+  "0xa8513697719790BE49dEbE812f66830094852588") as `0x${string}`;

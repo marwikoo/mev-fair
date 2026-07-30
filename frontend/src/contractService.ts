@@ -1,1 +1,353 @@
-aW1wb3J0IHsgY3JlYXRlQ2xpZW50LCBjcmVhdGVBY2NvdW50IH0gZnJvbSAiZ2VubGF5ZXItanMiOwppbXBvcnQgeyBzdHVkaW9uZXQgfSBmcm9tICJnZW5sYXllci1qcy9jaGFpbnMiOwppbXBvcnQgeyBUcmFuc2FjdGlvblN0YXR1cyB9IGZyb20gImdlbmxheWVyLWpzL3R5cGVzIjsKaW1wb3J0IHsgQ09OVFJBQ1RfQUREUkVTUyB9IGZyb20gIi4vY2hhaW4iOwoKdHlwZSBIZXggPSBgMHgke3N0cmluZ31gOwpjb25zdCBUSU1FT1VUX01TID0gMzAwXzAwMDsKCi8vIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAovLyBEb21haW4gdHlwZXMgbWlycm9yaW5nIHRoZSBNZXZGYWlyQ291cnQgdmlld3MuCi8vIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApleHBvcnQgdHlwZSBCYW5kID0KICB8ICJGQUlSIgogIHwgIkJPUkRFUkxJTkUiCiAgfCAiRVhUUkFDVElWRSIKICB8ICJQUkVEQVRPUlkiCiAgfCAiUEVORElORyIKICB8ICIiOwoKZXhwb3J0IGludGVyZmFjZSBCdW5kbGVWaWV3IHsKICBidW5kbGVJZDogc3RyaW5nOwogIHNvbHZlcjogc3RyaW5nOwogIGJsb2NrTm86IG51bWJlcjsKICBidW5kbGVIYXNoOiBzdHJpbmc7CiAgZmFpckF0dGVzdGF0aW9uOiBzdHJpbmc7CiAgZXh0cmFjdGVkQnBzOiBudW1iZXI7CiAgYmFuZDogQmFuZDsKICBzb2x2ZXJCb25kOiBzdHJpbmc7CiAgc3VibWl0dGVkQXRTZXE6IG51bWJlcjsKICBzY29yZWRBdFNlcTogbnVtYmVyOwogIGRpc2J1cnNlZEF0U2VxOiBudW1iZXI7Cn0KCmV4cG9ydCBpbnRlcmZhY2UgQ29tcGxhaW50VmlldyB7CiAgY29tcGxhaW50SWQ6IHN0cmluZzsKICBidW5kbGVJZDogc3RyaW5nOwogIGNvbXBsYWluYW50OiBzdHJpbmc7CiAgdmljdGltVHg6IHN0cmluZzsKICBhbGxlZ2VkS2luZDogc3RyaW5nOwogIGhhcm1DbGFpbUJwczogbnVtYmVyOwogIGNvbXBsYWluYW50Qm9uZDogc3RyaW5nOwogIGF3YXJkZWRCcHM6IG51bWJlcjsKICBhd2FyZGVkVmFsdWU6IHN0cmluZzsKICBwb3N0ZWRBdFNlcTogbnVtYmVyOwp9CgpleHBvcnQgdHlwZSBCYW5kQ291bnRzID0gUmVjb3JkPEV4Y2x1ZGU8QmFuZCwgIiI+LCBudW1iZXI+OwoKLy8g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACi8vIENsaWVudCBwbHVtYmluZwovLyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKLy8gUmVhZHMgdXNlIGFuIGVwaGVtZXJhbCByZWFkLW9ubHkgY2xpZW50LiBXcml0ZXMgdXNlIHRoZSB3YWxsZXQtYmFja2VkCi8vIGdlbmxheWVyLWpzIGNsaWVudCBwcm9kdWNlZCBieSB1c2VXcml0ZUNsaWVudCgpIChzaWducyB2aWEgdGhlIGNvbm5lY3RlZAovLyB3YWxsZXQncyBFSVAtMTE5MyBwcm92aWRlciDigJQgdGhlIHBhZ2UgbmV2ZXIgaG9sZHMgYSBwcml2YXRlIGtleSkuCmZ1bmN0aW9uIHJlYWRDbGllbnQoKSB7CiAgcmV0dXJuIGNyZWF0ZUNsaWVudCh7IGNoYWluOiBzdHVkaW9uZXQsIGFjY291bnQ6IGNyZWF0ZUFjY291bnQoKSB9KTsKfQoKZnVuY3Rpb24gcmVxdWlyZUNsaWVudChjbGllbnQ6IGFueSk6IGFueSB7CiAgaWYgKCFjbGllbnQpIHRocm93IG5ldyBFcnJvcigiQ29ubmVjdCBhIHdhbGxldCBvbiBzdHVkaW9uZXQgZmlyc3QuIik7CiAgcmV0dXJuIGNsaWVudDsKfQoKYXN5bmMgZnVuY3Rpb24gd2FpdEFjY2VwdGVkKGNsaWVudDogYW55LCBoYXNoOiBIZXgpIHsKICBsZXQgdGltZXI6IFJldHVyblR5cGU8dHlwZW9mIHNldFRpbWVvdXQ+IHwgdW5kZWZpbmVkOwogIGNvbnN0IHRpbWVvdXQgPSBuZXcgUHJvbWlzZTxuZXZlcj4oKF8sIHJlamVjdCkgPT4gewogICAgdGltZXIgPSBzZXRUaW1lb3V0KCgpID0+IHJlamVjdChuZXcgRXJyb3IoIlRyYW5zYWN0aW9uIHRpbWVkIG91dCIpKSwgVElNRU9VVF9NUyk7CiAgfSk7CiAgdHJ5IHsKICAgIGF3YWl0IFByb21pc2UucmFjZShbCiAgICAgIGNsaWVudC53YWl0Rm9yVHJhbnNhY3Rpb25SZWNlaXB0KHsKICAgICAgICBoYXNoOiBoYXNoIGFzIG5ldmVyLAogICAgICAgIHN0YXR1czogVHJhbnNhY3Rpb25TdGF0dXMuQUNDRVBURUQsCiAgICAgICAgaW50ZXJ2YWw6IDUwMDAsCiAgICAgICAgcmV0cmllczogNjAsCiAgICAgIH0pLAogICAgICB0aW1lb3V0LAogICAgXSk7CiAgfSBmaW5hbGx5IHsKICAgIGlmICh0aW1lcikgY2xlYXJUaW1lb3V0KHRpbWVyKTsKICB9Cn0KCmZ1bmN0aW9uIHBpY2sob2JqOiBhbnksIGtleTogc3RyaW5nLCBpZHg6IG51bWJlcik6IGFueSB7CiAgaWYgKG9iaiA9PSBudWxsKSByZXR1cm4gdW5kZWZpbmVkOwogIGlmIChBcnJheS5pc0FycmF5KG9iaikpIHJldHVybiBvYmpbaWR4XTsKICBpZiAodHlwZW9mIG9iaiA9PT0gIm9iamVjdCIgJiYga2V5IGluIG9iaikgcmV0dXJuIG9ialtrZXldOwogIHJldHVybiB1bmRlZmluZWQ7Cn0KCi8vIFRoZSBjb250cmFjdCBkZXJpdmVzIGJ1bmRsZV9pZCA9IHNoYTI1NihmIntibG9ja19ub318e2J1bmRsZV9oYXNofSIpLgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gY29tcHV0ZUJ1bmRsZUlkKGJsb2NrTm86IG51bWJlciwgYnVuZGxlSGFzaDogc3RyaW5nKTogUHJvbWlzZTxzdHJpbmc+IHsKICBjb25zdCBtc2cgPSBgJHtNYXRoLnRydW5jKGJsb2NrTm8pfXwke2J1bmRsZUhhc2h9YDsKICBjb25zdCBieXRlcyA9IG5ldyBUZXh0RW5jb2RlcigpLmVuY29kZShtc2cpOwogIGNvbnN0IGRpZ2VzdCA9IGF3YWl0IGNyeXB0by5zdWJ0bGUuZGlnZXN0KCJTSEEtMjU2IiwgYnl0ZXMpOwogIHJldHVybiBBcnJheS5mcm9tKG5ldyBVaW50OEFycmF5KGRpZ2VzdCkpCiAgICAubWFwKChiKSA9PiBiLnRvU3RyaW5nKDE2KS5wYWRTdGFydCgyLCAiMCIpKQogICAgLmpvaW4oIiIpOwp9CgovLyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKLy8gV1JJVEVTIOKAlCBgY2xpZW50YCBpcyB0aGUgd2FsbGV0LWJhY2tlZCBnZW5sYXllci1qcyBjbGllbnQuCi8vIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApleHBvcnQgYXN5bmMgZnVuY3Rpb24gc3VibWl0QnVuZGxlKAogIGNsaWVudDogYW55LAogIGJsb2NrTm86IG51bWJlciwKICBidW5kbGVIYXNoOiBzdHJpbmcsCiAgc3dhcHNCbG9iOiBzdHJpbmcsCiAgZmFpckF0dGVzdGF0aW9uOiBzdHJpbmcsCiAgYm9uZFdlaTogYmlnaW50Cik6IFByb21pc2U8c3RyaW5nPiB7CiAgaWYgKGJvbmRXZWkgPD0gMG4pIHRocm93IG5ldyBFcnJvcigiU29sdmVyIGJvbmQgbXVzdCBiZSA+IDAiKTsKICBjb25zdCB3YyA9IHJlcXVpcmVDbGllbnQoY2xpZW50KTsKICBjb25zdCBoID0gKGF3YWl0IHdjLndyaXRlQ29udHJhY3QoewogICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICBmdW5jdGlvbk5hbWU6ICJzdWJtaXRfYnVuZGxlIiwKICAgIGFyZ3M6IFtCaWdJbnQoTWF0aC50cnVuYyhibG9ja05vKSksIGJ1bmRsZUhhc2gudHJpbSgpLCBzd2Fwc0Jsb2IsIGZhaXJBdHRlc3RhdGlvbi50cmltKCldLAogICAgdmFsdWU6IGJvbmRXZWksCiAgfSkpIGFzIEhleDsKICBhd2FpdCB3YWl0QWNjZXB0ZWQod2MsIGgpOwogIHJldHVybiBjb21wdXRlQnVuZGxlSWQoYmxvY2tObywgYnVuZGxlSGFzaC50cmltKCkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZmlsZUNvbXBsYWludCgKICBjbGllbnQ6IGFueSwKICBidW5kbGVJZDogc3RyaW5nLAogIHZpY3RpbVR4OiBzdHJpbmcsCiAgYWxsZWdlZEtpbmQ6IHN0cmluZywKICBoYXJtQ2xhaW1CcHM6IG51bWJlciwKICBib25kV2VpOiBiaWdpbnQKKTogUHJvbWlzZTx2b2lkPiB7CiAgaWYgKGJvbmRXZWkgPD0gMG4pIHRocm93IG5ldyBFcnJvcigiQ29tcGxhaW50IGJvbmQgbXVzdCBiZSA+IDAiKTsKICBjb25zdCB3YyA9IHJlcXVpcmVDbGllbnQoY2xpZW50KTsKICBjb25zdCBoID0gKGF3YWl0IHdjLndyaXRlQ29udHJhY3QoewogICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICBmdW5jdGlvbk5hbWU6ICJmaWxlX2NvbXBsYWludCIsCiAgICBhcmdzOiBbYnVuZGxlSWQsIHZpY3RpbVR4LnRyaW0oKSwgYWxsZWdlZEtpbmQudHJpbSgpLnRvTG93ZXJDYXNlKCksIE1hdGgudHJ1bmMoaGFybUNsYWltQnBzKV0sCiAgICB2YWx1ZTogYm9uZFdlaSwKICB9KSkgYXMgSGV4OwogIGF3YWl0IHdhaXRBY2NlcHRlZCh3YywgaCk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhdHRhY2hDb3VudGVyZmFjdHVhbChjbGllbnQ6IGFueSwgYnVuZGxlSWQ6IHN0cmluZywgb3JhY2xlVXJsOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHsKICBjb25zdCB3YyA9IHJlcXVpcmVDbGllbnQoY2xpZW50KTsKICBjb25zdCBoID0gKGF3YWl0IHdjLndyaXRlQ29udHJhY3QoewogICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICBmdW5jdGlvbk5hbWU6ICJhdHRhY2hfY291bnRlcmZhY3R1YWwiLAogICAgYXJnczogW2J1bmRsZUlkLCBvcmFjbGVVcmwudHJpbSgpXSwKICAgIHZhbHVlOiAwbiwKICB9KSkgYXMgSGV4OwogIGF3YWl0IHdhaXRBY2NlcHRlZCh3YywgaCk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBzY29yZShjbGllbnQ6IGFueSwgYnVuZGxlSWQ6IHN0cmluZyk6IFByb21pc2U8dm9pZD4gewogIGNvbnN0IHdjID0gcmVxdWlyZUNsaWVudChjbGllbnQpOwogIGNvbnN0IGggPSAoYXdhaXQgd2Mud3JpdGVDb250cmFjdCh7CiAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgIGZ1bmN0aW9uTmFtZTogInNjb3JlIiwKICAgIGFyZ3M6IFtidW5kbGVJZF0sCiAgICB2YWx1ZTogMG4sCiAgfSkpIGFzIEhleDsKICBhd2FpdCB3YWl0QWNjZXB0ZWQod2MsIGgpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZGlzYnVyc2VSZWJhdGUoY2xpZW50OiBhbnksIGJ1bmRsZUlkOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHsKICBjb25zdCB3YyA9IHJlcXVpcmVDbGllbnQoY2xpZW50KTsKICBjb25zdCBoID0gKGF3YWl0IHdjLndyaXRlQ29udHJhY3QoewogICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICBmdW5jdGlvbk5hbWU6ICJkaXNidXJzZV9yZWJhdGUiLAogICAgYXJnczogW2J1bmRsZUlkXSwKICAgIHZhbHVlOiAwbiwKICB9KSkgYXMgSGV4OwogIGF3YWl0IHdhaXRBY2NlcHRlZCh3YywgaCk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiB3aXRoZHJhd0NyZWRpdChjbGllbnQ6IGFueSk6IFByb21pc2U8dm9pZD4gewogIGNvbnN0IHdjID0gcmVxdWlyZUNsaWVudChjbGllbnQpOwogIGNvbnN0IGggPSAoYXdhaXQgd2Mud3JpdGVDb250cmFjdCh7CiAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgIGZ1bmN0aW9uTmFtZTogIndpdGhkcmF3X2NyZWRpdCIsCiAgICBhcmdzOiBbXSwKICAgIHZhbHVlOiAwbiwKICB9KSkgYXMgSGV4OwogIGF3YWl0IHdhaXRBY2NlcHRlZCh3YywgaCk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBhcHBlYWwoCiAgY2xpZW50OiBhbnksCiAgYnVuZGxlSWQ6IHN0cmluZywKICBuZXdPcmFjbGVVcmw6IHN0cmluZywKICBib25kV2VpOiBiaWdpbnQKKTogUHJvbWlzZTx2b2lkPiB7CiAgaWYgKGJvbmRXZWkgPD0gMG4pIHRocm93IG5ldyBFcnJvcigiQXBwZWFsIGJvbmQgbXVzdCBiZSA+IDAiKTsKICBjb25zdCB3YyA9IHJlcXVpcmVDbGllbnQoY2xpZW50KTsKICBjb25zdCBoID0gKGF3YWl0IHdjLndyaXRlQ29udHJhY3QoewogICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICBmdW5jdGlvbk5hbWU6ICJhcHBlYWwiLAogICAgYXJnczogW2J1bmRsZUlkLCBuZXdPcmFjbGVVcmwudHJpbSgpXSwKICAgIHZhbHVlOiBib25kV2VpLAogIH0pKSBhcyBIZXg7CiAgYXdhaXQgd2FpdEFjY2VwdGVkKHdjLCBoKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNsYXNoU29sdmVyKGNsaWVudDogYW55LCBidW5kbGVJZDogc3RyaW5nKTogUHJvbWlzZTx2b2lkPiB7CiAgY29uc3Qgd2MgPSByZXF1aXJlQ2xpZW50KGNsaWVudCk7CiAgY29uc3QgaCA9IChhd2FpdCB3Yy53cml0ZUNvbnRyYWN0KHsKICAgIGFkZHJlc3M6IENPTlRSQUNUX0FERFJFU1MgYXMgSGV4LAogICAgZnVuY3Rpb25OYW1lOiAic2xhc2hfc29sdmVyIiwKICAgIGFyZ3M6IFtidW5kbGVJZF0sCiAgICB2YWx1ZTogMG4sCiAgfSkpIGFzIEhleDsKICBhd2FpdCB3YWl0QWNjZXB0ZWQod2MsIGgpOwp9CgovLyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKLy8gVklFV1MKLy8g4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRCdW5kbGUoYnVuZGxlSWQ6IHN0cmluZyk6IFByb21pc2U8QnVuZGxlVmlldyB8IG51bGw+IHsKICB0cnkgewogICAgY29uc3QgcjogYW55ID0gYXdhaXQgcmVhZENsaWVudCgpLnJlYWRDb250cmFjdCh7CiAgICAgIGFkZHJlc3M6IENPTlRSQUNUX0FERFJFU1MgYXMgSGV4LAogICAgICBmdW5jdGlvbk5hbWU6ICJidW5kbGUiLAogICAgICBhcmdzOiBbYnVuZGxlSWRdLAogICAgfSk7CiAgICByZXR1cm4gewogICAgICBidW5kbGVJZDogU3RyaW5nKHBpY2sociwgImJ1bmRsZV9pZCIsIDApID8/IGJ1bmRsZUlkKSwKICAgICAgc29sdmVyOiBTdHJpbmcocGljayhyLCAic29sdmVyIiwgMSkgPz8gIiIpLAogICAgICBibG9ja05vOiBOdW1iZXIocGljayhyLCAiYmxvY2tfbm8iLCAyKSA/PyAwKSwKICAgICAgYnVuZGxlSGFzaDogU3RyaW5nKHBpY2sociwgImJ1bmRsZV9oYXNoIiwgMykgPz8gIiIpLAogICAgICBmYWlyQXR0ZXN0YXRpb246IFN0cmluZyhwaWNrKHIsICJmYWlyX2F0dGVzdGF0aW9uIiwgNCkgPz8gIiIpLAogICAgICBleHRyYWN0ZWRCcHM6IE51bWJlcihwaWNrKHIsICJleHRyYWN0ZWRfYnBzIiwgNSkgPz8gMCksCiAgICAgIGJhbmQ6IFN0cmluZyhwaWNrKHIsICJiYW5kIiwgNikgPz8gIiIpIGFzIEJhbmQsCiAgICAgIHNvbHZlckJvbmQ6IFN0cmluZyhwaWNrKHIsICJzb2x2ZXJfYm9uZCIsIDcpID8/ICIwIiksCiAgICAgIHN1Ym1pdHRlZEF0U2VxOiBOdW1iZXIocGljayhyLCAic3VibWl0dGVkX2F0X3NlcSIsIDgpID8/IDApLAogICAgICBzY29yZWRBdFNlcTogTnVtYmVyKHBpY2sociwgInNjb3JlZF9hdF9zZXEiLCA5KSA/PyAwKSwKICAgICAgZGlzYnVyc2VkQXRTZXE6IE51bWJlcihwaWNrKHIsICJkaXNidXJzZWRfYXRfc2VxIiwgMTApID8/IDApLAogICAgfTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBudWxsOwogIH0KfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFN0YWdlTG9nKGJ1bmRsZUlkOiBzdHJpbmcpOiBQcm9taXNlPHN0cmluZ1tdPiB7CiAgdHJ5IHsKICAgIGNvbnN0IHI6IGFueSA9IGF3YWl0IHJlYWRDbGllbnQoKS5yZWFkQ29udHJhY3QoewogICAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgICAgZnVuY3Rpb25OYW1lOiAiYnVuZGxlX3N0YWdlX2xvZyIsCiAgICAgIGFyZ3M6IFtidW5kbGVJZF0sCiAgICB9KTsKICAgIHJldHVybiBBcnJheS5pc0FycmF5KHIpID8gci5tYXAoKHgpID0+IFN0cmluZyh4KSkgOiBbXTsKICB9IGNhdGNoIHsKICAgIHJldHVybiBbXTsKICB9Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRDb21wbGFpbnRzKGJ1bmRsZUlkOiBzdHJpbmcpOiBQcm9taXNlPENvbXBsYWludFZpZXdbXT4gewogIHRyeSB7CiAgICBjb25zdCByOiBhbnkgPSBhd2FpdCByZWFkQ2xpZW50KCkucmVhZENvbnRyYWN0KHsKICAgICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICAgIGZ1bmN0aW9uTmFtZTogImNvbXBsYWludHNfb2YiLAogICAgICBhcmdzOiBbYnVuZGxlSWRdLAogICAgfSk7CiAgICBpZiAoIUFycmF5LmlzQXJyYXkocikpIHJldHVybiBbXTsKICAgIHJldHVybiByLm1hcCgoYzogYW55KSA9PiAoewogICAgICBjb21wbGFpbnRJZDogU3RyaW5nKHBpY2soYywgImNvbXBsYWludF9pZCIsIDApID8/ICIiKSwKICAgICAgYnVuZGxlSWQ6IFN0cmluZyhwaWNrKGMsICJidW5kbGVfaWQiLCAxKSA/PyBidW5kbGVJZCksCiAgICAgIGNvbXBsYWluYW50OiBTdHJpbmcocGljayhjLCAiY29tcGxhaW5hbnQiLCAyKSA/PyAiIiksCiAgICAgIHZpY3RpbVR4OiBTdHJpbmcocGljayhjLCAidmljdGltX3R4IiwgMykgPz8gIiIpLAogICAgICBhbGxlZ2VkS2luZDogU3RyaW5nKHBpY2soYywgImFsbGVnZWRfa2luZCIsIDQpID8/ICIiKSwKICAgICAgaGFybUNsYWltQnBzOiBOdW1iZXIocGljayhjLCAiaGFybV9jbGFpbV9icHMiLCA1KSA/PyAwKSwKICAgICAgY29tcGxhaW5hbnRCb25kOiBTdHJpbmcocGljayhjLCAiY29tcGxhaW5hbnRfYm9uZCIsIDYpID8/ICIwIiksCiAgICAgIGF3YXJkZWRCcHM6IE51bWJlcihwaWNrKGMsICJhd2FyZGVkX2JwcyIsIDcpID8/IDApLAogICAgICBhd2FyZGVkVmFsdWU6IFN0cmluZyhwaWNrKGMsICJhd2FyZGVkX3ZhbHVlIiwgOCkgPz8gIjAiKSwKICAgICAgcG9zdGVkQXRTZXE6IE51bWJlcihwaWNrKGMsICJwb3N0ZWRfYXRfc2VxIiwgOSkgPz8gMCksCiAgICB9KSk7CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gW107CiAgfQp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0UGVuZGluZ0NyZWRpdChhZGRyOiBzdHJpbmcpOiBQcm9taXNlPHN0cmluZz4gewogIHRyeSB7CiAgICBjb25zdCByOiBhbnkgPSBhd2FpdCByZWFkQ2xpZW50KCkucmVhZENvbnRyYWN0KHsKICAgICAgYWRkcmVzczogQ09OVFJBQ1RfQUREUkVTUyBhcyBIZXgsCiAgICAgIGZ1bmN0aW9uTmFtZTogInBlbmRpbmdfY3JlZGl0IiwKICAgICAgYXJnczogW2FkZHJdLAogICAgfSk7CiAgICByZXR1cm4gU3RyaW5nKHIgPz8gIjAiKTsKICB9IGNhdGNoIHsKICAgIHJldHVybiAiMCI7CiAgfQp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QmFuZChidW5kbGVJZDogc3RyaW5nKTogUHJvbWlzZTxCYW5kPiB7CiAgdHJ5IHsKICAgIGNvbnN0IHI6IGFueSA9IGF3YWl0IHJlYWRDbGllbnQoKS5yZWFkQ29udHJhY3QoewogICAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgICAgZnVuY3Rpb25OYW1lOiAiYmFuZCIsCiAgICAgIGFyZ3M6IFtidW5kbGVJZF0sCiAgICB9KTsKICAgIHJldHVybiBTdHJpbmcociA/PyAiIikgYXMgQmFuZDsKICB9IGNhdGNoIHsKICAgIHJldHVybiAiIjsKICB9Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRDb3VudEJ5QmFuZCgpOiBQcm9taXNlPEJhbmRDb3VudHM+IHsKICBjb25zdCBlbXB0eTogQmFuZENvdW50cyA9IHsgRkFJUjogMCwgQk9SREVSTElORTogMCwgRVhUUkFDVElWRTogMCwgUFJFREFUT1JZOiAwLCBQRU5ESU5HOiAwIH07CiAgdHJ5IHsKICAgIGNvbnN0IHI6IGFueSA9IGF3YWl0IHJlYWRDbGllbnQoKS5yZWFkQ29udHJhY3QoewogICAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgICAgZnVuY3Rpb25OYW1lOiAiY291bnRfYnlfYmFuZCIsCiAgICAgIGFyZ3M6IFtdLAogICAgfSk7CiAgICBpZiAociAmJiB0eXBlb2YgciA9PT0gIm9iamVjdCIpIHsKICAgICAgcmV0dXJuIHsKICAgICAgICBGQUlSOiBOdW1iZXIoci5GQUlSID8/IDApLAogICAgICAgIEJPUkRFUkxJTkU6IE51bWJlcihyLkJPUkRFUkxJTkUgPz8gMCksCiAgICAgICAgRVhUUkFDVElWRTogTnVtYmVyKHIuRVhUUkFDVElWRSA/PyAwKSwKICAgICAgICBQUkVEQVRPUlk6IE51bWJlcihyLlBSRURBVE9SWSA/PyAwKSwKICAgICAgICBQRU5ESU5HOiBOdW1iZXIoci5QRU5ESU5HID8/IDApLAogICAgICB9OwogICAgfQogICAgcmV0dXJuIGVtcHR5OwogIH0gY2F0Y2ggewogICAgcmV0dXJuIGVtcHR5OwogIH0KfQoKZXhwb3J0IGludGVyZmFjZSBTb2x2ZXJSZWNvcmRWaWV3IHsKICBhZGRyOiBzdHJpbmc7CiAgYnVuZGxlc1N1Ym1pdHRlZDogbnVtYmVyOwogIGJ1bmRsZXNQcmVkYXRvcnk6IG51bWJlcjsKICB0b3RhbFNsYXNoZWQ6IHN0cmluZzsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFNvbHZlclJlY29yZChhZGRyOiBzdHJpbmcpOiBQcm9taXNlPFNvbHZlclJlY29yZFZpZXcgfCBudWxsPiB7CiAgdHJ5IHsKICAgIGNvbnN0IHI6IGFueSA9IGF3YWl0IHJlYWRDbGllbnQoKS5yZWFkQ29udHJhY3QoewogICAgICBhZGRyZXNzOiBDT05UUkFDVF9BRERSRVNTIGFzIEhleCwKICAgICAgZnVuY3Rpb25OYW1lOiAic29sdmVyX3JlY29yZCIsCiAgICAgIGFyZ3M6IFthZGRyXSwKICAgIH0pOwogICAgcmV0dXJuIHsKICAgICAgYWRkcjogU3RyaW5nKHBpY2sociwgImFkZHIiLCAwKSA/PyBhZGRyKSwKICAgICAgYnVuZGxlc1N1Ym1pdHRlZDogTnVtYmVyKHBpY2sociwgImJ1bmRsZXNfc3VibWl0dGVkIiwgMSkgPz8gMCksCiAgICAgIGJ1bmRsZXNQcmVkYXRvcnk6IE51bWJlcihwaWNrKHIsICJidW5kbGVzX3ByZWRhdG9yeSIsIDIpID8/IDApLAogICAgICB0b3RhbFNsYXNoZWQ6IFN0cmluZyhwaWNrKHIsICJ0b3RhbF9zbGFzaGVkIiwgMykgPz8gIjAiKSwKICAgIH07CiAgfSBjYXRjaCB7CiAgICByZXR1cm4gbnVsbDsKICB9Cn0K
+import { createClient, createAccount } from "genlayer-js";
+import { studionet } from "genlayer-js/chains";
+import { TransactionStatus } from "genlayer-js/types";
+import { CONTRACT_ADDRESS } from "./chain";
+
+type Hex = `0x${string}`;
+const TIMEOUT_MS = 300_000;
+
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Domain types mirroring the MevFairCourt views.
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+export type Band =
+  | "FAIR"
+  | "BORDERLINE"
+  | "EXTRACTIVE"
+  | "PREDATORY"
+  | "PENDING"
+  | "";
+
+export interface BundleView {
+  bundleId: string;
+  solver: string;
+  blockNo: number;
+  bundleHash: string;
+  fairAttestation: string;
+  extractedBps: number;
+  band: Band;
+  solverBond: string;
+  submittedAtSeq: number;
+  scoredAtSeq: number;
+  disbursedAtSeq: number;
+}
+
+export interface ComplaintView {
+  complaintId: string;
+  bundleId: string;
+  complainant: string;
+  victimTx: string;
+  allegedKind: string;
+  harmClaimBps: number;
+  complainantBond: string;
+  awardedBps: number;
+  awardedValue: string;
+  postedAtSeq: number;
+}
+
+export type BandCounts = Record<Exclude<Band, "">, number>;
+
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Client plumbing
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// Reads use an ephemeral read-only client. Writes use the wallet-backed
+// genlayer-js client produced by useWriteClient() (signs via the connected
+// wallet's EIP-1193 provider â€” the page never holds a private key).
+function readClient() {
+  return createClient({ chain: studionet, account: createAccount() });
+}
+
+function requireClient(client: any): any {
+  if (!client) throw new Error("Connect a wallet on studionet first.");
+  return client;
+}
+
+async function waitAccepted(client: any, hash: Hex) {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  const timeout = new Promise<never>((_, reject) => {
+    timer = setTimeout(() => reject(new Error("Transaction timed out")), TIMEOUT_MS);
+  });
+  try {
+    await Promise.race([
+      client.waitForTransactionReceipt({
+        hash: hash as never,
+        status: TransactionStatus.ACCEPTED,
+        interval: 5000,
+        retries: 60,
+      }),
+      timeout,
+    ]);
+  } finally {
+    if (timer) clearTimeout(timer);
+  }
+}
+
+function pick(obj: any, key: string, idx: number): any {
+  if (obj == null) return undefined;
+  if (Array.isArray(obj)) return obj[idx];
+  if (typeof obj === "object" && key in obj) return obj[key];
+  return undefined;
+}
+
+// The contract derives bundle_id = sha256(f"{block_no}|{bundle_hash}").
+export async function computeBundleId(blockNo: number, bundleHash: string): Promise<string> {
+  const msg = `${Math.trunc(blockNo)}|${bundleHash}`;
+  const bytes = new TextEncoder().encode(msg);
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  return Array.from(new Uint8Array(digest))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// WRITES â€” `client` is the wallet-backed genlayer-js client.
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+export async function submitBundle(
+  client: any,
+  blockNo: number,
+  bundleHash: string,
+  swapsBlob: string,
+  fairAttestation: string,
+  bondWei: bigint
+): Promise<string> {
+  if (bondWei <= 0n) throw new Error("Solver bond must be > 0");
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "submit_bundle",
+    args: [BigInt(Math.trunc(blockNo)), bundleHash.trim(), swapsBlob, fairAttestation.trim()],
+    value: bondWei,
+  })) as Hex;
+  await waitAccepted(wc, h);
+  return computeBundleId(blockNo, bundleHash.trim());
+}
+
+export async function fileComplaint(
+  client: any,
+  bundleId: string,
+  victimTx: string,
+  allegedKind: string,
+  harmClaimBps: number,
+  bondWei: bigint
+): Promise<void> {
+  if (bondWei <= 0n) throw new Error("Complaint bond must be > 0");
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "file_complaint",
+    args: [bundleId, victimTx.trim(), allegedKind.trim().toLowerCase(), Math.trunc(harmClaimBps)],
+    value: bondWei,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function attachCounterfactual(client: any, bundleId: string, oracleUrl: string): Promise<void> {
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "attach_counterfactual",
+    args: [bundleId, oracleUrl.trim()],
+    value: 0n,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function score(client: any, bundleId: string): Promise<void> {
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "score",
+    args: [bundleId],
+    value: 0n,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function disburseRebate(client: any, bundleId: string): Promise<void> {
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "disburse_rebate",
+    args: [bundleId],
+    value: 0n,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function withdrawCredit(client: any): Promise<void> {
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "withdraw_credit",
+    args: [],
+    value: 0n,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function appeal(
+  client: any,
+  bundleId: string,
+  newOracleUrl: string,
+  bondWei: bigint
+): Promise<void> {
+  if (bondWei <= 0n) throw new Error("Appeal bond must be > 0");
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "appeal",
+    args: [bundleId, newOracleUrl.trim()],
+    value: bondWei,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+export async function slashSolver(client: any, bundleId: string): Promise<void> {
+  const wc = requireClient(client);
+  const h = (await wc.writeContract({
+    address: CONTRACT_ADDRESS as Hex,
+    functionName: "slash_solver",
+    args: [bundleId],
+    value: 0n,
+  })) as Hex;
+  await waitAccepted(wc, h);
+}
+
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// VIEWS
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+export async function getBundle(bundleId: string): Promise<BundleView | null> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "bundle",
+      args: [bundleId],
+    });
+    return {
+      bundleId: String(pick(r, "bundle_id", 0) ?? bundleId),
+      solver: String(pick(r, "solver", 1) ?? ""),
+      blockNo: Number(pick(r, "block_no", 2) ?? 0),
+      bundleHash: String(pick(r, "bundle_hash", 3) ?? ""),
+      fairAttestation: String(pick(r, "fair_attestation", 4) ?? ""),
+      extractedBps: Number(pick(r, "extracted_bps", 5) ?? 0),
+      band: String(pick(r, "band", 6) ?? "") as Band,
+      solverBond: String(pick(r, "solver_bond", 7) ?? "0"),
+      submittedAtSeq: Number(pick(r, "submitted_at_seq", 8) ?? 0),
+      scoredAtSeq: Number(pick(r, "scored_at_seq", 9) ?? 0),
+      disbursedAtSeq: Number(pick(r, "disbursed_at_seq", 10) ?? 0),
+    };
+  } catch {
+    return null;
+  }
+}
+
+export async function getStageLog(bundleId: string): Promise<string[]> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "bundle_stage_log",
+      args: [bundleId],
+    });
+    return Array.isArray(r) ? r.map((x) => String(x)) : [];
+  } catch {
+    return [];
+  }
+}
+
+export async function getComplaints(bundleId: string): Promise<ComplaintView[]> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "complaints_of",
+      args: [bundleId],
+    });
+    if (!Array.isArray(r)) return [];
+    return r.map((c: any) => ({
+      complaintId: String(pick(c, "complaint_id", 0) ?? ""),
+      bundleId: String(pick(c, "bundle_id", 1) ?? bundleId),
+      complainant: String(pick(c, "complainant", 2) ?? ""),
+      victimTx: String(pick(c, "victim_tx", 3) ?? ""),
+      allegedKind: String(pick(c, "alleged_kind", 4) ?? ""),
+      harmClaimBps: Number(pick(c, "harm_claim_bps", 5) ?? 0),
+      complainantBond: String(pick(c, "complainant_bond", 6) ?? "0"),
+      awardedBps: Number(pick(c, "awarded_bps", 7) ?? 0),
+      awardedValue: String(pick(c, "awarded_value", 8) ?? "0"),
+      postedAtSeq: Number(pick(c, "posted_at_seq", 9) ?? 0),
+    }));
+  } catch {
+    return [];
+  }
+}
+
+export async function getPendingCredit(addr: string): Promise<string> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "pending_credit",
+      args: [addr],
+    });
+    return String(r ?? "0");
+  } catch {
+    return "0";
+  }
+}
+
+export async function getBand(bundleId: string): Promise<Band> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "band",
+      args: [bundleId],
+    });
+    return String(r ?? "") as Band;
+  } catch {
+    return "";
+  }
+}
+
+export async function getCountByBand(): Promise<BandCounts> {
+  const empty: BandCounts = { FAIR: 0, BORDERLINE: 0, EXTRACTIVE: 0, PREDATORY: 0, PENDING: 0 };
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "count_by_band",
+      args: [],
+    });
+    if (r && typeof r === "object") {
+      return {
+        FAIR: Number(r.FAIR ?? 0),
+        BORDERLINE: Number(r.BORDERLINE ?? 0),
+        EXTRACTIVE: Number(r.EXTRACTIVE ?? 0),
+        PREDATORY: Number(r.PREDATORY ?? 0),
+        PENDING: Number(r.PENDING ?? 0),
+      };
+    }
+    return empty;
+  } catch {
+    return empty;
+  }
+}
+
+export interface SolverRecordView {
+  addr: string;
+  bundlesSubmitted: number;
+  bundlesPredatory: number;
+  totalSlashed: string;
+}
+
+export async function getSolverRecord(addr: string): Promise<SolverRecordView | null> {
+  try {
+    const r: any = await readClient().readContract({
+      address: CONTRACT_ADDRESS as Hex,
+      functionName: "solver_record",
+      args: [addr],
+    });
+    return {
+      addr: String(pick(r, "addr", 0) ?? addr),
+      bundlesSubmitted: Number(pick(r, "bundles_submitted", 1) ?? 0),
+      bundlesPredatory: Number(pick(r, "bundles_predatory", 2) ?? 0),
+      totalSlashed: String(pick(r, "total_slashed", 3) ?? "0"),
+    };
+  } catch {
+    return null;
+  }
+}

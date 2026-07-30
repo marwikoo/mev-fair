@@ -1,1 +1,37 @@
-aW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCBzIGZyb20gIi4vQWNjb3JkaW9uLm1vZHVsZS5jc3MiOwoKZXhwb3J0IGludGVyZmFjZSBRQSB7CiAgcTogc3RyaW5nOwogIGE6IHN0cmluZzsKfQoKZXhwb3J0IGZ1bmN0aW9uIEFjY29yZGlvbih7IGl0ZW1zIH06IHsgaXRlbXM6IFFBW10gfSkgewogIGNvbnN0IFtvcGVuLCBzZXRPcGVuXSA9IHVzZVN0YXRlPG51bWJlcj4oMCk7CiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPXtzLmxpc3R9PgogICAgICB7aXRlbXMubWFwKChpdCwgaSkgPT4gewogICAgICAgIGNvbnN0IGlzT3BlbiA9IG9wZW4gPT09IGk7CiAgICAgICAgcmV0dXJuICgKICAgICAgICAgIDxkaXYga2V5PXtpfSBjbGFzc05hbWU9e2Ake3MuaXRlbX0gJHtpc09wZW4gPyBzLm9wZW4gOiAiIn1gfT4KICAgICAgICAgICAgPGJ1dHRvbgogICAgICAgICAgICAgIGNsYXNzTmFtZT17cy5xfQogICAgICAgICAgICAgIGFyaWEtZXhwYW5kZWQ9e2lzT3Blbn0KICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKGlzT3BlbiA/IC0xIDogaSl9CiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8c3Bhbj57aXQucX08L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtzLnBsdXN9IGFyaWEtaGlkZGVuPgogICAgICAgICAgICAgICAge2lzT3BlbiA/ICLigJMiIDogIisifQogICAgICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgICAgPC9idXR0b24+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzLmFXcmFwfSBzdHlsZT17eyBncmlkVGVtcGxhdGVSb3dzOiBpc09wZW4gPyAiMWZyIiA6ICIwZnIiIH19PgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzLmFJbm5lcn0+CiAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9e3MuYX0+e2l0LmF9PC9wPgogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICk7CiAgICAgIH0pfQogICAgPC9kaXY+CiAgKTsKfQo=
+import { useState } from "react";
+import s from "./Accordion.module.css";
+
+export interface QA {
+  q: string;
+  a: string;
+}
+
+export function Accordion({ items }: { items: QA[] }) {
+  const [open, setOpen] = useState<number>(0);
+  return (
+    <div className={s.list}>
+      {items.map((it, i) => {
+        const isOpen = open === i;
+        return (
+          <div key={i} className={`${s.item} ${isOpen ? s.open : ""}`}>
+            <button
+              className={s.q}
+              aria-expanded={isOpen}
+              onClick={() => setOpen(isOpen ? -1 : i)}
+            >
+              <span>{it.q}</span>
+              <span className={s.plus} aria-hidden>
+                {isOpen ? "â€“" : "+"}
+              </span>
+            </button>
+            <div className={s.aWrap} style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}>
+              <div className={s.aInner}>
+                <p className={s.a}>{it.a}</p>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}

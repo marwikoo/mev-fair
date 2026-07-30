@@ -1,1 +1,58 @@
-Ly8gRm9ybWF0dGluZyArIGNvbnRyYWN0IGVycm9yLWVudmVsb3BlIHBhcnNpbmcuCgpleHBvcnQgZnVuY3Rpb24gc2hvcnRIYXNoKGg6IHN0cmluZywgaGVhZCA9IDgsIHRhaWwgPSA2KTogc3RyaW5nIHsKICBpZiAoIWgpIHJldHVybiAi4oCUIjsKICByZXR1cm4gaC5sZW5ndGggPiBoZWFkICsgdGFpbCArIDIgPyBgJHtoLnNsaWNlKDAsIGhlYWQpfeKApiR7aC5zbGljZSgtdGFpbCl9YCA6IGg7Cn0KCmV4cG9ydCBmdW5jdGlvbiBzaG9ydEFkZHIoYTogc3RyaW5nKTogc3RyaW5nIHsKICBpZiAoIWEgfHwgYSA9PT0gIjB4IikgcmV0dXJuICLigJQiOwogIHJldHVybiBhLmxlbmd0aCA+IDEyID8gYCR7YS5zbGljZSgwLCA2KX3igKYke2Euc2xpY2UoLTQpfWAgOiBhOwp9Cgpjb25zdCBTVEFHRV9MQUJFTDogUmVjb3JkPHN0cmluZywgc3RyaW5nPiA9IHsKICBJTkdFU1Q6ICJJbmdlc3QiLAogIFBBUlNFOiAiUGFyc2UiLAogIENGTDogIkNvdW50ZXJmYWN0dWFsIiwKICBTQ09SRTogIlNjb3JlIiwKICBKVURHRTogIkp1ZGdtZW50IiwKICBSRUJBVEU6ICJSZWJhdGUiLAogIEFQUEVBTDogIkFwcGVhbCIsCiAgVElFOiAiVGllLWJyZWFrIiwKfTsKY29uc3QgU0VWX0xBQkVMOiBSZWNvcmQ8c3RyaW5nLCBzdHJpbmc+ID0gewogIEhBUkQ6ICJyZWplY3RlZCIsCiAgU09GVDogInRyYW5zaWVudCBlcnJvciIsCiAgTU9ERUw6ICJtb2RlbCBlcnJvciIsCn07CgovKioKICogUGFyc2VzIHRoZSBjb250cmFjdCdzIGA8U1RBR0U6U0VWRVJJVFk6ZGV0YWlsPmAgZW52ZWxvcGUgaW50byBhIHJlYWRhYmxlCiAqIGxpbmUsIGUuZy4gIjxJTkdFU1Q6SEFSRDpidW5kbGVfYWxyZWFkeV9zdWJtaXR0ZWQ+IiDihpIKICogIkluZ2VzdCByZWplY3RlZDogYnVuZGxlIGFscmVhZHkgc3VibWl0dGVkIi4KICovCmV4cG9ydCBmdW5jdGlvbiBwYXJzZUVudmVsb3BlKHJhdzogc3RyaW5nKTogc3RyaW5nIHsKICBpZiAoIXJhdykgcmV0dXJuICJTb21ldGhpbmcgd2VudCB3cm9uZy4iOwogIGNvbnN0IG0gPSByYXcubWF0Y2goLzwoW0EtWl0rKTooW0EtWl0rKTooW14+XSspPi8pOwogIGlmICghbSkgewogICAgLy8gc3RyaXAgbm9pc3kgcHJlZml4ZXMgZnJvbSBTREsvcnVudGltZSBlcnJvcnMKICAgIGNvbnN0IGNsZWFuZWQgPSByYXcucmVwbGFjZSgvXkVycm9yOlxzKi9pLCAiIikuc2xpY2UoMCwgMTgwKTsKICAgIGlmICgvdGltZWQgb3V0L2kudGVzdChjbGVhbmVkKSkgcmV0dXJuICJUcmFuc2FjdGlvbiB0aW1lZCBvdXQg4oCUIHRyeSBhZ2Fpbi4iOwogICAgaWYgKC9VTkRFVEVSTUlORUR8TUFKT1JJVFlfRElTQUdSRUV8ZGlzYWdyZWUvaS50ZXN0KGNsZWFuZWQpKQogICAgICByZXR1cm4gIlZhbGlkYXRvcnMgZGlkIG5vdCByZWFjaCBjb25zZW5zdXMgb24gdGhpcyByb3VuZCDigJQgcmV0cnkuIjsKICAgIGlmICgvQ29ubmVjdCBhIHdhbGxldC9pLnRlc3QoY2xlYW5lZCkpIHJldHVybiBjbGVhbmVkOwogICAgcmV0dXJuIGNsZWFuZWQgfHwgIlNvbWV0aGluZyB3ZW50IHdyb25nLiI7CiAgfQogIGNvbnN0IFssIHN0YWdlLCBzZXYsIGRldGFpbF0gPSBtOwogIGNvbnN0IHMgPSBTVEFHRV9MQUJFTFtzdGFnZV0gPz8gc3RhZ2U7CiAgY29uc3QgdiA9IFNFVl9MQUJFTFtzZXZdID8/IHNldi50b0xvd2VyQ2FzZSgpOwogIGNvbnN0IGQgPSBkZXRhaWwucmVwbGFjZSgvXy9nLCAiICIpLnJlcGxhY2UoLzovZywgIiDCtyAiKS50cmltKCk7CiAgcmV0dXJuIGAke3N9ICR7dn06ICR7ZH1gOwp9CgovLyBzaG9ydCBsYWJlbCBmb3IgYSBzdGFnZV9sb2cgZW50cnkgbGlrZSAiU0NPUkU6YnBzPTQyIgpleHBvcnQgZnVuY3Rpb24gc3RhZ2VMb2dMYWJlbChlbnRyeTogc3RyaW5nKTogeyBzdGFnZTogc3RyaW5nOyBkZXRhaWw6IHN0cmluZyB9IHsKICBjb25zdCBpID0gZW50cnkuaW5kZXhPZigiOiIpOwogIGlmIChpIDwgMCkgcmV0dXJuIHsgc3RhZ2U6IGVudHJ5LCBkZXRhaWw6ICIiIH07CiAgcmV0dXJuIHsgc3RhZ2U6IGVudHJ5LnNsaWNlKDAsIGkpLCBkZXRhaWw6IGVudHJ5LnNsaWNlKGkgKyAxKSB9Owp9Cg==
+// Formatting + contract error-envelope parsing.
+
+export function shortHash(h: string, head = 8, tail = 6): string {
+  if (!h) return "â€”";
+  return h.length > head + tail + 2 ? `${h.slice(0, head)}â€¦${h.slice(-tail)}` : h;
+}
+
+export function shortAddr(a: string): string {
+  if (!a || a === "0x") return "â€”";
+  return a.length > 12 ? `${a.slice(0, 6)}â€¦${a.slice(-4)}` : a;
+}
+
+const STAGE_LABEL: Record<string, string> = {
+  INGEST: "Ingest",
+  PARSE: "Parse",
+  CFL: "Counterfactual",
+  SCORE: "Score",
+  JUDGE: "Judgment",
+  REBATE: "Rebate",
+  APPEAL: "Appeal",
+  TIE: "Tie-break",
+};
+const SEV_LABEL: Record<string, string> = {
+  HARD: "rejected",
+  SOFT: "transient error",
+  MODEL: "model error",
+};
+
+/**
+ * Parses the contract's `<STAGE:SEVERITY:detail>` envelope into a readable
+ * line, e.g. "<INGEST:HARD:bundle_already_submitted>" â†’
+ * "Ingest rejected: bundle already submitted".
+ */
+export function parseEnvelope(raw: string): string {
+  if (!raw) return "Something went wrong.";
+  const m = raw.match(/<([A-Z]+):([A-Z]+):([^>]+)>/);
+  if (!m) {
+    // strip noisy prefixes from SDK/runtime errors
+    const cleaned = raw.replace(/^Error:\s*/i, "").slice(0, 180);
+    if (/timed out/i.test(cleaned)) return "Transaction timed out â€” try again.";
+    if (/UNDETERMINED|MAJORITY_DISAGREE|disagree/i.test(cleaned))
+      return "Validators did not reach consensus on this round â€” retry.";
+    if (/Connect a wallet/i.test(cleaned)) return cleaned;
+    return cleaned || "Something went wrong.";
+  }
+  const [, stage, sev, detail] = m;
+  const s = STAGE_LABEL[stage] ?? stage;
+  const v = SEV_LABEL[sev] ?? sev.toLowerCase();
+  const d = detail.replace(/_/g, " ").replace(/:/g, " Â· ").trim();
+  return `${s} ${v}: ${d}`;
+}
+
+// short label for a stage_log entry like "SCORE:bps=42"
+export function stageLogLabel(entry: string): { stage: string; detail: string } {
+  const i = entry.indexOf(":");
+  if (i < 0) return { stage: entry, detail: "" };
+  return { stage: entry.slice(0, i), detail: entry.slice(i + 1) };
+}

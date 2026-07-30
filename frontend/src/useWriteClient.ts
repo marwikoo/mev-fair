@@ -1,1 +1,53 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgdXNlQWNjb3VudCB9IGZyb20gIndhZ21pIjsKaW1wb3J0IHsgY3JlYXRlQ2xpZW50IH0gZnJvbSAiZ2VubGF5ZXItanMiOwppbXBvcnQgeyBzdHVkaW9uZXQgfSBmcm9tICJnZW5sYXllci1qcy9jaGFpbnMiOwoKdHlwZSBIZXggPSBgMHgke3N0cmluZ31gOwpleHBvcnQgY29uc3QgU1RVRElPTkVUX0NIQUlOX0lEID0gNjE5OTk7CgpleHBvcnQgaW50ZXJmYWNlIFdyaXRlQ3R4IHsKICBjbGllbnQ6IGFueSB8IG51bGw7IC8vIGdlbmxheWVyLWpzIGNsaWVudCBzaWduaW5nIHRocm91Z2ggdGhlIHdhbGxldAogIGFkZHJlc3M6IEhleCB8IG51bGw7CiAgaXNDb25uZWN0ZWQ6IGJvb2xlYW47CiAgd3JvbmdDaGFpbjogYm9vbGVhbjsKfQoKLyoqCiAqIEJ1aWxkcyBhIGdlbmxheWVyLWpzIGNsaWVudCB0aGF0IHNpZ25zIHRocm91Z2ggdGhlIGNvbm5lY3RlZCB3YWxsZXQncwogKiBFSVAtMTE5MyBwcm92aWRlciAoTWV0YU1hc2ssIFJhYmJ5LCDigKYpLiBObyBwcml2YXRlIGtleSBpcyBldmVyIGhlbGQgYnkgdGhlCiAqIHBhZ2Ug4oCUIGdlbmxheWVyLWpzJ3MgYHByb3ZpZGVyYCBjb25maWcgZGVsZWdhdGVzIHNpZ25pbmcgdG8gdGhlIHdhbGxldC4KICovCmV4cG9ydCBmdW5jdGlvbiB1c2VXcml0ZUNsaWVudCgpOiBXcml0ZUN0eCB7CiAgY29uc3QgeyBhZGRyZXNzLCBjb25uZWN0b3IsIGlzQ29ubmVjdGVkLCBjaGFpbklkIH0gPSB1c2VBY2NvdW50KCk7CiAgY29uc3QgW2NsaWVudCwgc2V0Q2xpZW50XSA9IHVzZVN0YXRlPGFueSB8IG51bGw+KG51bGwpOwogIGNvbnN0IHdyb25nQ2hhaW4gPSBpc0Nvbm5lY3RlZCAmJiBjaGFpbklkICE9PSBTVFVESU9ORVRfQ0hBSU5fSUQ7CgogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBsZXQgYWN0aXZlID0gdHJ1ZTsKICAgIChhc3luYyAoKSA9PiB7CiAgICAgIGlmICghaXNDb25uZWN0ZWQgfHwgIWFkZHJlc3MgfHwgIWNvbm5lY3RvciB8fCB3cm9uZ0NoYWluKSB7CiAgICAgICAgc2V0Q2xpZW50KG51bGwpOwogICAgICAgIHJldHVybjsKICAgICAgfQogICAgICB0cnkgewogICAgICAgIGNvbnN0IHByb3ZpZGVyID0gYXdhaXQgY29ubmVjdG9yLmdldFByb3ZpZGVyKCk7CiAgICAgICAgaWYgKCFhY3RpdmUpIHJldHVybjsKICAgICAgICBzZXRDbGllbnQoCiAgICAgICAgICBjcmVhdGVDbGllbnQoewogICAgICAgICAgICBjaGFpbjogc3R1ZGlvbmV0LAogICAgICAgICAgICBhY2NvdW50OiBhZGRyZXNzIGFzIEhleCwKICAgICAgICAgICAgcHJvdmlkZXI6IHByb3ZpZGVyIGFzIGFueSwKICAgICAgICAgIH0pCiAgICAgICAgKTsKICAgICAgfSBjYXRjaCB7CiAgICAgICAgaWYgKGFjdGl2ZSkgc2V0Q2xpZW50KG51bGwpOwogICAgICB9CiAgICB9KSgpOwogICAgcmV0dXJuICgpID0+IHsKICAgICAgYWN0aXZlID0gZmFsc2U7CiAgICB9OwogIH0sIFthZGRyZXNzLCBjb25uZWN0b3IsIGlzQ29ubmVjdGVkLCBjaGFpbklkLCB3cm9uZ0NoYWluXSk7CgogIHJldHVybiB7IGNsaWVudCwgYWRkcmVzczogKGFkZHJlc3MgYXMgSGV4KSA/PyBudWxsLCBpc0Nvbm5lY3RlZCwgd3JvbmdDaGFpbiB9Owp9Cg==
+import { useEffect, useState } from "react";
+import { useAccount } from "wagmi";
+import { createClient } from "genlayer-js";
+import { studionet } from "genlayer-js/chains";
+
+type Hex = `0x${string}`;
+export const STUDIONET_CHAIN_ID = 61999;
+
+export interface WriteCtx {
+  client: any | null; // genlayer-js client signing through the wallet
+  address: Hex | null;
+  isConnected: boolean;
+  wrongChain: boolean;
+}
+
+/**
+ * Builds a genlayer-js client that signs through the connected wallet's
+ * EIP-1193 provider (MetaMask, Rabby, â€¦). No private key is ever held by the
+ * page â€” genlayer-js's `provider` config delegates signing to the wallet.
+ */
+export function useWriteClient(): WriteCtx {
+  const { address, connector, isConnected, chainId } = useAccount();
+  const [client, setClient] = useState<any | null>(null);
+  const wrongChain = isConnected && chainId !== STUDIONET_CHAIN_ID;
+
+  useEffect(() => {
+    let active = true;
+    (async () => {
+      if (!isConnected || !address || !connector || wrongChain) {
+        setClient(null);
+        return;
+      }
+      try {
+        const provider = await connector.getProvider();
+        if (!active) return;
+        setClient(
+          createClient({
+            chain: studionet,
+            account: address as Hex,
+            provider: provider as any,
+          })
+        );
+      } catch {
+        if (active) setClient(null);
+      }
+    })();
+    return () => {
+      active = false;
+    };
+  }, [address, connector, isConnected, chainId, wrongChain]);
+
+  return { client, address: (address as Hex) ?? null, isConnected, wrongChain };
+}

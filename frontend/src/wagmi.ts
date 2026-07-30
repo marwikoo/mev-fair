@@ -1,1 +1,20 @@
-aW1wb3J0IHsgY29ubmVjdG9yc0ZvcldhbGxldHMgfSBmcm9tICJAcmFpbmJvdy1tZS9yYWluYm93a2l0IjsKaW1wb3J0IHsgaW5qZWN0ZWRXYWxsZXQgfSBmcm9tICJAcmFpbmJvdy1tZS9yYWluYm93a2l0L3dhbGxldHMiOwppbXBvcnQgeyBjcmVhdGVDb25maWcsIGh0dHAgfSBmcm9tICJ3YWdtaSI7CmltcG9ydCB7IHN0dWRpb25ldCB9IGZyb20gIi4vY2hhaW5zIjsKCi8vIEluamVjdGVkLW9ubHkgY29ubmVjdG9yIChNZXRhTWFzaywgUmFiYnksIGFueSBicm93c2VyIHdhbGxldCkuIFdlIGRvIE5PVAovLyB1c2UgV2FsbGV0Q29ubmVjdCDigJQgaXQgcHVsbHMgdGhpcmQtcGFydHkgY29va2llcywgbG9ncyBjb25zb2xlIGVycm9ycyBvbiBhCi8vIHBsYWNlaG9sZGVyIHByb2plY3RJZCwgYW5kIGJsb2F0cyB0aGUgYnVuZGxlLiBpbmplY3RlZFdhbGxldCBjb3ZlcnMgdGhlCi8vIGJyb3dzZXItZXh0ZW5zaW9uIHdhbGxldHMgdGhpcyBkYXBwIHRhcmdldHMuCmNvbnN0IGNvbm5lY3RvcnMgPSBjb25uZWN0b3JzRm9yV2FsbGV0cygKICBbeyBncm91cE5hbWU6ICJXYWxsZXRzIiwgd2FsbGV0czogW2luamVjdGVkV2FsbGV0XSB9XSwKICB7IGFwcE5hbWU6ICJUSU1FwrdNQUNISU5FIOKAlCBNRVYtRmFpciIsIHByb2plY3RJZDogIkdFTkxBWUVSX0xPQ0FMIiB9Cik7CgpleHBvcnQgY29uc3Qgd2FnbWlDb25maWcgPSBjcmVhdGVDb25maWcoewogIGNoYWluczogW3N0dWRpb25ldF0sCiAgY29ubmVjdG9ycywKICB0cmFuc3BvcnRzOiB7IFtzdHVkaW9uZXQuaWRdOiBodHRwKCkgfSwKICBzc3I6IGZhbHNlLAp9KTsK
+import { connectorsForWallets } from "@rainbow-me/rainbowkit";
+import { injectedWallet } from "@rainbow-me/rainbowkit/wallets";
+import { createConfig, http } from "wagmi";
+import { studionet } from "./chains";
+
+// Injected-only connector (MetaMask, Rabby, any browser wallet). We do NOT
+// use WalletConnect â€” it pulls third-party cookies, logs console errors on a
+// placeholder projectId, and bloats the bundle. injectedWallet covers the
+// browser-extension wallets this dapp targets.
+const connectors = connectorsForWallets(
+  [{ groupName: "Wallets", wallets: [injectedWallet] }],
+  { appName: "TIMEÂ·MACHINE â€” MEV-Fair", projectId: "GENLAYER_LOCAL" }
+);
+
+export const wagmiConfig = createConfig({
+  chains: [studionet],
+  connectors,
+  transports: { [studionet.id]: http() },
+  ssr: false,
+});

@@ -1,1 +1,50 @@
-Lmxpc3QgewogIGRpc3BsYXk6IGZsZXg7CiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjsKICBnYXA6IDEwcHg7CiAgbWF4LXdpZHRoOiA4MjBweDsKfQouaXRlbSB7CiAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0taGFpcmxpbmUtc29mdCk7CiAgYm9yZGVyLXJhZGl1czogdmFyKC0tcmFkaXVzLXNtKTsKICBiYWNrZ3JvdW5kOiB2YXIoLS1zdXJmYWNlLTEpOwogIG92ZXJmbG93OiBoaWRkZW47CiAgdHJhbnNpdGlvbjogYm9yZGVyLWNvbG9yIDAuNHMgdmFyKC0tZWFzZSk7Cn0KLml0ZW0ub3BlbiB7CiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1oYWlybGluZSk7Cn0KLnEgewogIHdpZHRoOiAxMDAlOwogIGRpc3BsYXk6IGZsZXg7CiAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47CiAgZ2FwOiAxNnB4OwogIGJhY2tncm91bmQ6IG5vbmU7CiAgYm9yZGVyOiBub25lOwogIGNvbG9yOiB2YXIoLS1pbmspOwogIHRleHQtYWxpZ246IGxlZnQ7CiAgcGFkZGluZzogMThweCAyMHB4OwogIGZvbnQtc2l6ZTogMTVweDsKICBmb250LXdlaWdodDogNTAwOwp9Ci5wbHVzIHsKICBmb250LWZhbWlseTogdmFyKC0tZm9udC1tb25vKTsKICBmb250LXNpemU6IDIwcHg7CiAgY29sb3I6IHZhcigtLWN5YW4pOwogIGxpbmUtaGVpZ2h0OiAxOwp9Ci5hV3JhcCB7CiAgZGlzcGxheTogZ3JpZDsKICB0cmFuc2l0aW9uOiBncmlkLXRlbXBsYXRlLXJvd3MgMC40NXMgdmFyKC0tZWFzZSk7Cn0KLmFJbm5lciB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQouYSB7CiAgcGFkZGluZzogMCAyMHB4IDE4cHg7CiAgY29sb3I6IHZhcigtLWdyYXkpOwogIGZvbnQtc2l6ZTogMTRweDsKICBsaW5lLWhlaWdodDogMS42OwogIG1heC13aWR0aDogNjhjaDsKfQo=
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 820px;
+}
+.item {
+  border: 1px solid var(--hairline-soft);
+  border-radius: var(--radius-sm);
+  background: var(--surface-1);
+  overflow: hidden;
+  transition: border-color 0.4s var(--ease);
+}
+.item.open {
+  border-color: var(--hairline);
+}
+.q {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: none;
+  border: none;
+  color: var(--ink);
+  text-align: left;
+  padding: 18px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.plus {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--cyan);
+  line-height: 1;
+}
+.aWrap {
+  display: grid;
+  transition: grid-template-rows 0.45s var(--ease);
+}
+.aInner {
+  overflow: hidden;
+}
+.a {
+  padding: 0 20px 18px;
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 68ch;
+}

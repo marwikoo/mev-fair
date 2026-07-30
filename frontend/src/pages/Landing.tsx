@@ -1,1 +1,445 @@
-aW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VSZWYsIHVzZVN0YXRlIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgeyBMaW5rIH0gZnJvbSAicmVhY3Qtcm91dGVyLWRvbSI7CmltcG9ydCB7IGdzYXAgfSBmcm9tICJnc2FwIjsKaW1wb3J0IHMgZnJvbSAiLi9MYW5kaW5nLm1vZHVsZS5jc3MiOwppbXBvcnQgeyBFeWVicm93IH0gZnJvbSAiLi4vY29tcG9uZW50cy91aSI7CmltcG9ydCB7IFN0YXJmaWVsZCB9IGZyb20gIi4uL2NvbXBvbmVudHMvU3RhcmZpZWxkIjsKaW1wb3J0IHsgU3RhZ2VGbG93IH0gZnJvbSAiLi4vY29tcG9uZW50cy9TdGFnZUZsb3ciOwppbXBvcnQgeyBBY2NvcmRpb24gfSBmcm9tICIuLi9jb21wb25lbnRzL0FjY29yZGlvbiI7CmltcG9ydCB7CiAgSWNvblJld2luZCwKICBJY29uQnVuZGxlLAogIEljb25GbGFnLAogIEljb25MaW5rLAogIEljb25TcGFyaywKICBJY29uQ29pbnMsCiAgSWNvbkdhdmVsLAogIEljb25TY2FsZSwKICBJY29uU2hpZWxkLAp9IGZyb20gIi4uL2NvbXBvbmVudHMvaWNvbnMiOwppbXBvcnQgeyB1c2VSZXZlYWwgfSBmcm9tICIuLi9ob29rcy91c2VSZXZlYWwiOwppbXBvcnQgeyBnZXRDb3VudEJ5QmFuZCwgdHlwZSBCYW5kQ291bnRzIH0gZnJvbSAiLi4vY29udHJhY3RTZXJ2aWNlIjsKaW1wb3J0IHsgQ09OVFJBQ1RfQUREUkVTUyB9IGZyb20gIi4uL2NoYWluIjsKCmNvbnN0IE5BViA9IFsKICB7IGxhYmVsOiAiSG93IGl0IHdvcmtzIiwgaHJlZjogIiNob3ciIH0sCiAgeyBsYWJlbDogIk1lY2hhbmljcyIsIGhyZWY6ICIjbWVjaGFuaWNzIiB9LAogIHsgbGFiZWw6ICJUaGUgQ291cnQiLCBocmVmOiAiI2NvdXJ0IiB9LAogIHsgbGFiZWw6ICJGQVEiLCBocmVmOiAiI2ZhcSIgfSwKXTsKCmZ1bmN0aW9uIE5hdigpIHsKICBjb25zdCBbc29saWQsIHNldFNvbGlkXSA9IHVzZVN0YXRlKGZhbHNlKTsKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3Qgb25TY3JvbGwgPSAoKSA9PiBzZXRTb2xpZCh3aW5kb3cuc2Nyb2xsWSA+IDQwKTsKICAgIG9uU2Nyb2xsKCk7CiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigic2Nyb2xsIiwgb25TY3JvbGwsIHsgcGFzc2l2ZTogdHJ1ZSB9KTsKICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcigic2Nyb2xsIiwgb25TY3JvbGwpOwogIH0sIFtdKTsKICByZXR1cm4gKAogICAgPGhlYWRlciBjbGFzc05hbWU9e2Ake3MubmF2fSAke3NvbGlkID8gcy5uYXZTb2xpZCA6ICIifWB9PgogICAgICA8ZGl2IGNsYXNzTmFtZT17YHdyYXAgJHtzLm5hdklubmVyfWB9PgogICAgICAgIDxMaW5rIHRvPSIvIiBjbGFzc05hbWU9e3MuYnJhbmR9IGFyaWEtbGFiZWw9IlRpbWUtTWFjaGluZSBob21lIj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17cy5icmFuZEdseXBofT4KICAgICAgICAgICAgPEljb25SZXdpbmQgc2l6ZT17MTh9IC8+CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8Yj5USU1FJm1pZGRvdDtNQUNISU5FPC9iPgogICAgICAgIDwvTGluaz4KICAgICAgICA8bmF2IGNsYXNzTmFtZT17cy5uYXZsaW5rc30gYXJpYS1sYWJlbD0iUHJpbWFyeSI+CiAgICAgICAgICB7TkFWLm1hcCgobikgPT4gKAogICAgICAgICAgICA8YSBrZXk9e24uaHJlZn0gaHJlZj17bi5ocmVmfT4KICAgICAgICAgICAgICB7bi5sYWJlbH0KICAgICAgICAgICAgPC9hPgogICAgICAgICAgKSl9CiAgICAgICAgPC9uYXY+CiAgICAgICAgPExpbmsgdG89Ii9jb3VydCIgY2xhc3NOYW1lPXtgYnRuIHNtICR7cy5uYXZjdGF9YH0+CiAgICAgICAgICBFbnRlciB0aGUgQ291cnQKICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iaWNvQ2lyY2xlIj4KICAgICAgICAgICAgPEljb25TY2FsZSBzaXplPXsxMn0gLz4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICA8L0xpbms+CiAgICAgIDwvZGl2PgogICAgPC9oZWFkZXI+CiAgKTsKfQoKZnVuY3Rpb24gSGVyb0dseXBoKCkgewogIGNvbnN0IHJlZiA9IHVzZVJlZjxTVkdTVkdFbGVtZW50IHwgbnVsbD4obnVsbCk7CiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIGNvbnN0IGVsID0gcmVmLmN1cnJlbnQ7CiAgICBpZiAoIWVsKSByZXR1cm47CiAgICBpZiAod2luZG93Lm1hdGNoTWVkaWEoIihwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiByZWR1Y2UpIikubWF0Y2hlcykgcmV0dXJuOwogICAgY29uc3QgcmluZ091dGVyID0gZWwucXVlcnlTZWxlY3RvcigiLnJpbmdPdXRlciIpOwogICAgY29uc3QgYXJjcyA9IGVsLnF1ZXJ5U2VsZWN0b3JBbGwoIi5hcmMiKTsKICAgIGNvbnN0IHRsID0gZ3NhcC50aW1lbGluZSh7IHJlcGVhdDogLTEsIGRlZmF1bHRzOiB7IGVhc2U6ICJub25lIiB9IH0pOwogICAgdGwudG8ocmluZ091dGVyLCB7IHJvdGF0aW9uOiAzNjAsIHRyYW5zZm9ybU9yaWdpbjogIjUwJSA1MCUiLCBkdXJhdGlvbjogNjAgfSwgMCk7CiAgICBnc2FwLmZyb21UbygKICAgICAgYXJjcywKICAgICAgeyBvcGFjaXR5OiAwLjE1IH0sCiAgICAgIHsgb3BhY2l0eTogMC43LCBkdXJhdGlvbjogMS42LCBzdGFnZ2VyOiAwLjI1LCB5b3lvOiB0cnVlLCByZXBlYXQ6IC0xLCBlYXNlOiAic2luZS5pbk91dCIgfQogICAgKTsKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIHRsLmtpbGwoKTsKICAgICAgZ3NhcC5raWxsVHdlZW5zT2YoYXJjcyk7CiAgICB9OwogIH0sIFtdKTsKICByZXR1cm4gKAogICAgPHN2ZyByZWY9e3JlZn0gY2xhc3NOYW1lPXtzLmdseXBofSB2aWV3Qm94PSIwIDAgMzIwIDMyMCIgZmlsbD0ibm9uZSIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImhnIiB4MT0iMCIgeDI9IjEiIHkxPSIwIiB5Mj0iMSI+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wQ29sb3I9IiMwMGQ0ZmYiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3BDb2xvcj0iI2ZmMDA2ZSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxnIGNsYXNzTmFtZT0icmluZ091dGVyIj4KICAgICAgICA8Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjE0OCIgc3Ryb2tlPSJ1cmwoI2hnKSIgc3Ryb2tlV2lkdGg9IjEiIG9wYWNpdHk9IjAuNCIgLz4KICAgICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogNjAgfSkubWFwKChfLCBpKSA9PiAoCiAgICAgICAgICA8bGluZQogICAgICAgICAgICBrZXk9e2l9CiAgICAgICAgICAgIHgxPSIxNjAiCiAgICAgICAgICAgIHkxPSIxOCIKICAgICAgICAgICAgeDI9IjE2MCIKICAgICAgICAgICAgeTI9e2kgJSA1ID09PSAwID8gMzAgOiAyNX0KICAgICAgICAgICAgc3Ryb2tlPSIjYjhjNWQ2IgogICAgICAgICAgICBzdHJva2VXaWR0aD0iMSIKICAgICAgICAgICAgb3BhY2l0eT17aSAlIDUgPT09IDAgPyAwLjUgOiAwLjJ9CiAgICAgICAgICAgIHRyYW5zZm9ybT17YHJvdGF0ZSgke2kgKiA2fSAxNjAgMTYwKWB9CiAgICAgICAgICAvPgogICAgICAgICkpfQogICAgICA8L2c+CiAgICAgIDxjaXJjbGUgY2xhc3NOYW1lPSJhcmMiIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjExMiIgc3Ryb2tlPSIjMDBkNGZmIiBzdHJva2VXaWR0aD0iMS41IiBzdHJva2VEYXNoYXJyYXk9IjQwIDYwMCIgb3BhY2l0eT0iMC40IiAvPgogICAgICA8Y2lyY2xlIGNsYXNzTmFtZT0iYXJjIiBjeD0iMTYwIiBjeT0iMTYwIiByPSI5MiIgc3Ryb2tlPSIjZmYwMDZlIiBzdHJva2VXaWR0aD0iMS41IiBzdHJva2VEYXNoYXJyYXk9IjMwIDQ4MCIgb3BhY2l0eT0iMC40IiAvPgogICAgICA8Y2lyY2xlIGN4PSIxNjAiIGN5PSIxNjAiIHI9IjcwIiBzdHJva2U9IiNiOGM1ZDYiIHN0cm9rZVdpZHRoPSIxIiBvcGFjaXR5PSIwLjE4IiAvPgogICAgICB7LyogcmV3aW5kIGNoZXZyb25zIGF0IHRoZSBjb3JlICovfQogICAgICA8ZyBzdHJva2U9InVybCgjaGcpIiBzdHJva2VXaWR0aD0iMi40IiBzdHJva2VMaW5lY2FwPSJyb3VuZCIgc3Ryb2tlTGluZWpvaW49InJvdW5kIj4KICAgICAgICA8cGF0aCBkPSJNMTY4IDE0NGwtMjAgMTYgMjAgMTYiIC8+CiAgICAgICAgPHBhdGggZD0iTTE1MCAxNDRsLTIwIDE2IDIwIDE2IiAvPgogICAgICA8L2c+CiAgICAgIDxjaXJjbGUgY3g9IjE2MCIgY3k9IjE2MCIgcj0iNSIgZmlsbD0iI2VhZjJmZiIgLz4KICAgIDwvc3ZnPgogICk7Cn0KCmZ1bmN0aW9uIEhlcm8oKSB7CiAgY29uc3Qgcm9vdCA9IHVzZVJlZjxIVE1MRGl2RWxlbWVudCB8IG51bGw+KG51bGwpOwogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBpZiAod2luZG93Lm1hdGNoTWVkaWEoIihwcmVmZXJzLXJlZHVjZWQtbW90aW9uOiByZWR1Y2UpIikubWF0Y2hlcykgcmV0dXJuOwogICAgY29uc3QgY3R4ID0gZ3NhcC5jb250ZXh0KCgpID0+IHsKICAgICAgZ3NhcC5mcm9tKCJbZGF0YS1oeF0iLCB7CiAgICAgICAgb3BhY2l0eTogMCwKICAgICAgICB5OiAyNiwKICAgICAgICBkdXJhdGlvbjogMC45LAogICAgICAgIHN0YWdnZXI6IDAuMTIsCiAgICAgICAgZWFzZTogInBvd2VyMy5vdXQiLAogICAgICAgIGRlbGF5OiAwLjEsCiAgICAgIH0pOwogICAgfSwgcm9vdCk7CiAgICByZXR1cm4gKCkgPT4gY3R4LnJldmVydCgpOwogIH0sIFtdKTsKICByZXR1cm4gKAogICAgPHNlY3Rpb24gY2xhc3NOYW1lPXtzLmhlcm99IHJlZj17cm9vdH0+CiAgICAgIDxTdGFyZmllbGQgY2xhc3NOYW1lPXtzLnN0YXJzfSAvPgogICAgICA8ZGl2IGNsYXNzTmFtZT17YHdyYXAgJHtzLmhlcm9HcmlkfWB9PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzLmhlcm9Db3B5fT4KICAgICAgICAgIDxkaXYgZGF0YS1oeD4KICAgICAgICAgICAgPEV5ZWJyb3c+YWN0dWFsIOKGlCBjb3VudGVyZmFjdHVhbDwvRXllYnJvdz4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGgxIGNsYXNzTmFtZT17cy5oMX0gZGF0YS1oeD4KICAgICAgICAgICAgUmV3aW5kIHRoZSBibG9jay4KICAgICAgICAgICAgPGJyIC8+CiAgICAgICAgICAgIFByaWNlIHRoZSA8ZW0+c3F1ZWV6ZS48L2VtPgogICAgICAgICAgPC9oMT4KICAgICAgICAgIDxwIGNsYXNzTmFtZT17cy5sZWRlfSBkYXRhLWh4PgogICAgICAgICAgICBtZXYtZmFpciByZXBsYXlzIGEgREVYIGJ1bmRsZSBhZ2FpbnN0IGEgZmFpci1vcmRlcmluZyBjb3VudGVyZmFjdHVhbCwgc2NvcmVzIHRoZSB2YWx1ZQogICAgICAgICAgICBleHRyYWN0ZWQgaW4gYmFzaXMgcG9pbnRzLCBhbmQgcGF5cyBpdCBiYWNrIHRvIHRoZSB2aWN0aW1zIG9uLWNoYWluLgogICAgICAgICAgPC9wPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9e3MuaGVyb0N0YXN9IGRhdGEtaHg+CiAgICAgICAgICAgIDxMaW5rIHRvPSIvY291cnQiIGNsYXNzTmFtZT0iYnRuIj4KICAgICAgICAgICAgICA8c3Bhbj5FbnRlciB0aGUgQ291cnQ8L3NwYW4+CiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJpY29DaXJjbGUiPgogICAgICAgICAgICAgICAgPEljb25TY2FsZSBzaXplPXsxM30gLz4KICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgPGEgaHJlZj0iI21lY2hhbmljcyIgY2xhc3NOYW1lPSJ0ZXh0bGluayI+CiAgICAgICAgICAgICAgUmVhZCB0aGUgbWVjaGFuaWNzIOKGkwogICAgICAgICAgICA8L2E+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT17cy5oZXJvQXJ0fSBkYXRhLWh4PgogICAgICAgICAgPEhlcm9HbHlwaCAvPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cgpjb25zdCBTVEFUUyA9IFsKICB7IGs6ICJHZW5MYXllci1uYXRpdmUiLCB2OiAidmFsaWRhdG9yLXNjb3JlZCIgfSwKICB7IGs6ICJPbi1jaGFpbiByZWJhdGVzIiwgdjogImFjY3J1YWwgbGVkZ2VyIiB9LAogIHsgazogIkxMTSBqdXJ5IiwgdjogIjQgcmVjb25jaWxlZCBzaXRlcyIgfSwKICB7IGs6ICJBcHBlYWwtcmVhZHkiLCB2OiAic2Vjb25kIG9yYWNsZSIgfSwKXTsKCmZ1bmN0aW9uIFdoYXRJcygpIHsKICBjb25zdCByZWYgPSB1c2VSZXZlYWw8SFRNTERpdkVsZW1lbnQ+KCk7CiAgcmV0dXJuICgKICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ic2VjdGlvbiIgaWQ9IndoYXQiIHJlZj17cmVmfT4KICAgICAgPGRpdiBjbGFzc05hbWU9IndyYXAiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZWN0aW9uLWhlYWQiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJyZXZlYWwiPgogICAgICAgICAgICA8RXllYnJvdz5XaGF0IGlzIG1ldi1mYWlyPC9FeWVicm93PgogICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0icmV2ZWFsIj5BIHNtYWxsLWNsYWltcyBjb3VydCBmb3Igc2FuZHdpY2hlZCB0cmFkZXMuPC9oMj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0icmV2ZWFsIj4KICAgICAgICAgICAgV2hlbiBhIHNvbHZlciByZW9yZGVycyBhIGJsb2NrIHRvIGV4dHJhY3QgdmFsdWUsIHRoZSB2aWN0aW1zIHJhcmVseSBnZXQgaXQgYmFjay4gbWV2LWZhaXIKICAgICAgICAgICAgdHVybnMgdGhhdCBleHRyYWN0aW9uIGludG8gYSBtZWFzdXJhYmxlIG51bWJlciBhbmQgYSB3aXRoZHJhd2FibGUgcmViYXRlIOKAlCBqdWRnZWQgYnkgYQogICAgICAgICAgICBHZW5MYXllciB2YWxpZGF0b3IgcGFuZWwsIG5vdCBhIGNlbnRyYWxpemVkIHJlZmVyZWUuCiAgICAgICAgICA8L3A+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3Muc3RhdHN9PgogICAgICAgICAge1NUQVRTLm1hcCgoc3QpID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e3N0Lmt9IGNsYXNzTmFtZT17YGdsYXNzICR7cy5zdGF0fSByZXZlYWxgfT4KICAgICAgICAgICAgICA8Yj57c3Qua308L2I+CiAgICAgICAgICAgICAgPHNwYW4+e3N0LnZ9PC9zcGFuPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvc2VjdGlvbj4KICApOwp9Cgpjb25zdCBTVEVQUyA9IFsKICB7IGljb246IEljb25CdW5kbGUsIHQ6ICJTdWJtaXQgYSBidW5kbGUiLCBkOiAiQSBzb2x2ZXIgcG9zdHMgYSBERVggYnVuZGxlIGhhc2gsIGl0cyBzd2FwcywgYW5kIGEgZmFpci10cmFkZSBhdHRlc3RhdGlvbiwgYmFja2VkIGJ5IGEgYm9uZC4iIH0sCiAgeyBpY29uOiBJY29uRmxhZywgdDogIkZpbGUgYSBjb21wbGFpbnQiLCBkOiAiVmljdGltcyBwb2ludCBhdCB0aGVpciBvd24gdHJhbnNhY3Rpb24gaGFzaCBhbmQgdGhlIGhhcm0gdGhleSBjbGFpbSwgaW4gYmFzaXMgcG9pbnRzLiIgfSwKICB7IGljb246IEljb25MaW5rLCB0OiAiQXR0YWNoIGEgY291bnRlcmZhY3R1YWwiLCBkOiAiQW55b25lIGF0dGFjaGVzIGFuIG9yYWNsZSBVUkwgZGVzY3JpYmluZyB0aGUgZmFpciBvcmRlcmluZy4gQW4gTExNIGNsZWFucyBpdCB0byBjYW5vbmljYWwgZm9ybS4iIH0sCiAgeyBpY29uOiBJY29uU3BhcmssIHQ6ICJTY29yZSB0aGUgZXh0cmFjdGlvbiIsIGQ6ICJHZW5MYXllciB2YWxpZGF0b3JzIHJlcGxheSBhY3R1YWwgdnMgY291bnRlcmZhY3R1YWwgYW5kIHJlY29uY2lsZSB0aGUgZXh0cmFjdGVkIGJwcy4iIH0sCiAgeyBpY29uOiBJY29uQ29pbnMsIHQ6ICJXaXRoZHJhdyB0aGUgcmViYXRlIiwgZDogIkNyZWRpdCBhY2NydWVzIHByby1yYXRhIHRvIHZpY3RpbXMgZnJvbSB0aGUgc29sdmVyIGJvbmQuIFRoZXkgcHVsbCBpdCB3aGVuZXZlciB0aGV5IGxpa2UuIiB9LApdOwoKZnVuY3Rpb24gSG93SXRXb3JrcygpIHsKICBjb25zdCByZWYgPSB1c2VSZXZlYWw8SFRNTERpdkVsZW1lbnQ+KCk7CiAgcmV0dXJuICgKICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0ic2VjdGlvbiIgaWQ9ImhvdyIgcmVmPXtyZWZ9PgogICAgICA8ZGl2IGNsYXNzTmFtZT0id3JhcCI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InNlY3Rpb24taGVhZCI+CiAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InJldmVhbCI+CiAgICAgICAgICAgIDxFeWVicm93PkhvdyBpdCB3b3JrczwvRXllYnJvdz4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InJldmVhbCI+Rml2ZSBzdGVwcyBmcm9tIGV4dHJhY3Rpb24gdG8gcmViYXRlLjwvaDI+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPG9sIGNsYXNzTmFtZT17cy5zdGVwc30+CiAgICAgICAgICB7U1RFUFMubWFwKChzdCwgaSkgPT4gewogICAgICAgICAgICBjb25zdCBJY29uID0gc3QuaWNvbjsKICAgICAgICAgICAgcmV0dXJuICgKICAgICAgICAgICAgICA8bGkga2V5PXtzdC50fSBjbGFzc05hbWU9e2BnbGFzcyAke3Muc3RlcH0gcmV2ZWFsYH0+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9e3Muc3RlcE5vfT57U3RyaW5nKGkgKyAxKS5wYWRTdGFydCgyLCAiMCIpfTwvc3Bhbj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17cy5zdGVwSWNvbn0+CiAgICAgICAgICAgICAgICAgIDxJY29uIHNpemU9ezIwfSAvPgogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgPGgzPntzdC50fTwvaDM+CiAgICAgICAgICAgICAgICA8cD57c3QuZH08L3A+CiAgICAgICAgICAgICAgPC9saT4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0pfQogICAgICAgIDwvb2w+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0KCmNvbnN0IE1FQ0ggPSBbCiAgewogICAgaWNvbjogSWNvbkJ1bmRsZSwKICAgIHQ6ICJQaXBlbGluZSBvZiBzdGFnZXMiLAogICAgZDogIkV2ZXJ5IHdyaXRlIHJ1bnMgdGhyb3VnaCBuYW1lZCBzdGFnZXMg4oCUIEluZ2VzdCwgUGFyc2UsIENGTCwgU2NvcmUsIEp1ZGdlLCBSZWJhdGUsIEFwcGVhbCDigJQgZWFjaCBhcHBlbmRpbmcgdG8gYW4gYXVkaXRhYmxlIHN0YWdlIGxvZyBvbiB0aGUgYnVuZGxlLiIsCiAgfSwKICB7CiAgICBpY29uOiBJY29uU3BhcmssCiAgICB0OiAiTExNIGNvbnNlbnN1cyIsCiAgICBkOiAiRm91ciBkaXN0aW5jdCBtb2RlbCBzaXRlcyAoY2xlYW4sIHNjb3JlLCBhcHBlYWwtcmVzY29yZSwgdGllLWJyZWFrKSBhcmUgcmVjb25jaWxlZCBieSBhIGN1c3RvbSBicHMtdG9sZXJhbmNlIHByZWRpY2F0ZSwgbm90IG5haXZlIHN0cmluZyBlcXVhbGl0eS4iLAogIH0sCiAgewogICAgaWNvbjogSWNvblNoaWVsZCwKICAgIHQ6ICJBcHBlYWwiLAogICAgZDogIkEgc29sdmVyIGNhbiBwb3N0IGFuIGFwcGVhbCBib25kIGFuZCBhIHNlY29uZCBvcmFjbGUuIEEgZnJlc2ggc2NvcmUgaXMgcmVjb25jaWxlZCBhZ2FpbnN0IHRoZSBmaXJzdDsgdGhlIGhpZ2hlci1jb25maWRlbmNlIGZpZ3VyZSBvciBhIHRpZS1icmVha2VyIHdpbnMuIiwKICB9LApdOwoKZnVuY3Rpb24gTWVjaGFuaWNzKCkgewogIGNvbnN0IHJlZiA9IHVzZVJldmVhbDxIVE1MRGl2RWxlbWVudD4oKTsKICByZXR1cm4gKAogICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJzZWN0aW9uIiBpZD0ibWVjaGFuaWNzIiByZWY9e3JlZn0+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJ3cmFwIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ic2VjdGlvbi1oZWFkIj4KICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0icmV2ZWFsIj4KICAgICAgICAgICAgPEV5ZWJyb3c+TWVjaGFuaWNzPC9FeWVicm93PgogICAgICAgICAgPC9zcGFuPgogICAgICAgICAgPGgyIGNsYXNzTmFtZT0icmV2ZWFsIj5UaHJlZSBtb3ZpbmcgcGFydHMsIG9uZSB2ZXJkaWN0LjwvaDI+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9e3MubWVjaENvbHN9PgogICAgICAgICAge01FQ0gubWFwKChtKSA9PiB7CiAgICAgICAgICAgIGNvbnN0IEljb24gPSBtLmljb247CiAgICAgICAgICAgIHJldHVybiAoCiAgICAgICAgICAgICAgPGFydGljbGUga2V5PXttLnR9IGNsYXNzTmFtZT17YCR7cy5tZWNoQ29sfSByZXZlYWxgfT4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17cy5tZWNoSWNvbn0+CiAgICAgICAgICAgICAgICAgIDxJY29uIHNpemU9ezIyfSAvPgogICAgICAgICAgICAgICAgPC9zcGFuPgogICAgICAgICAgICAgICAgPGgzPnttLnR9PC9oMz4KICAgICAgICAgICAgICAgIDxwPnttLmR9PC9wPgogICAgICAgICAgICAgIDwvYXJ0aWNsZT4KICAgICAgICAgICAgKTsKICAgICAgICAgIH0pfQogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtgZ2xhc3MgJHtzLmZsb3dDYXJkfSByZXZlYWxgfT4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzLmZsb3dIZWFkfT4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJtb25vIj5zdGFnZV9sb2c8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17cy5mbG93SGludH0+YnVuZGxlIHByb2dyZXNzaW5nIHRocm91Z2ggdGhlIHBpcGVsaW5lPC9zcGFuPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8U3RhZ2VGbG93IC8+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0KCmNvbnN0IEJBTkRTOiB7IGs6IGtleW9mIEJhbmRDb3VudHM7IGxhYmVsOiBzdHJpbmcgfVtdID0gWwogIHsgazogIkZBSVIiLCBsYWJlbDogImZhaXIiIH0sCiAgeyBrOiAiQk9SREVSTElORSIsIGxhYmVsOiAiYm9yZGVybGluZSIgfSwKICB7IGs6ICJFWFRSQUNUSVZFIiwgbGFiZWw6ICJleHRyYWN0aXZlIiB9LAogIHsgazogIlBSRURBVE9SWSIsIGxhYmVsOiAicHJlZGF0b3J5IiB9LAogIHsgazogIlBFTkRJTkciLCBsYWJlbDogInBlbmRpbmciIH0sCl07CgpmdW5jdGlvbiBUaGVDb3VydCgpIHsKICBjb25zdCByZWYgPSB1c2VSZXZlYWw8SFRNTERpdkVsZW1lbnQ+KCk7CiAgY29uc3QgW2NvdW50cywgc2V0Q291bnRzXSA9IHVzZVN0YXRlPEJhbmRDb3VudHMgfCBudWxsPihudWxsKTsKICBjb25zdCBbZXJyLCBzZXRFcnJdID0gdXNlU3RhdGUoZmFsc2UpOwogIHVzZUVmZmVjdCgoKSA9PiB7CiAgICBsZXQgb24gPSB0cnVlOwogICAgZ2V0Q291bnRCeUJhbmQoKQogICAgICAudGhlbigoYykgPT4gb24gJiYgc2V0Q291bnRzKGMpKQogICAgICAuY2F0Y2goKCkgPT4gb24gJiYgc2V0RXJyKHRydWUpKTsKICAgIHJldHVybiAoKSA9PiB7CiAgICAgIG9uID0gZmFsc2U7CiAgICB9OwogIH0sIFtdKTsKICByZXR1cm4gKAogICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJzZWN0aW9uIiBpZD0iY291cnQiIHJlZj17cmVmfT4KICAgICAgPGRpdiBjbGFzc05hbWU9IndyYXAiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZWN0aW9uLWhlYWQiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJyZXZlYWwiPgogICAgICAgICAgICA8RXllYnJvdz5UaGUgQ291cnQgwrcgbGl2ZTwvRXllYnJvdz4KICAgICAgICAgIDwvc3Bhbj4KICAgICAgICAgIDxoMiBjbGFzc05hbWU9InJldmVhbCI+QnVuZGxlcyBieSBiYW5kLCBvbi1jaGFpbiByaWdodCBub3cuPC9oMj4KICAgICAgICAgIDxwIGNsYXNzTmFtZT0icmV2ZWFsIj4KICAgICAgICAgICAgUmVhZCBzdHJhaWdodCBmcm9tIDxjb2RlPmNvdW50X2J5X2JhbmQoKTwvY29kZT4gb24gdGhlIGRlcGxveWVkIGNvbnRyYWN0LgogICAgICAgICAgPC9wPgogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPXtzLmJhbmRzfT4KICAgICAgICAgIHtCQU5EUy5tYXAoKGIpID0+ICgKICAgICAgICAgICAgPGRpdgogICAgICAgICAgICAgIGtleT17Yi5rfQogICAgICAgICAgICAgIGNsYXNzTmFtZT17YGdsYXNzICR7cy5iYW5kQ2FyZH0gcmV2ZWFsYH0KICAgICAgICAgICAgICBzdHlsZT17eyBbIi0tYmFuZGMiIGFzIGFueV06IGB2YXIoLS1iYW5kLSR7Yi5rfSlgIH19CiAgICAgICAgICAgID4KICAgICAgICAgICAgICA8YiBjbGFzc05hbWU9InRudW0iPntjb3VudHMgPyBjb3VudHNbYi5rXSA6IGVyciA/ICLigJQiIDogIsK3wrcifTwvYj4KICAgICAgICAgICAgICA8c3Bhbj57Yi5sYWJlbH08L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKSl9CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9e2Ake3MuY291cnRDdGF9IHJldmVhbGB9PgogICAgICAgICAgPExpbmsgdG89Ii9jb3VydCIgY2xhc3NOYW1lPSJidG4iPgogICAgICAgICAgICA8c3Bhbj5PcGVuIHRoZSB3b3Jrc3BhY2U8L3NwYW4+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iaWNvQ2lyY2xlIj4KICAgICAgICAgICAgICA8SWNvbkdhdmVsIHNpemU9ezEzfSAvPgogICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8L0xpbms+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0KCmNvbnN0IEZBUSA9IFsKICB7CiAgICBxOiAiV2h5IEdlbkxheWVyPyIsCiAgICBhOiAiU2NvcmluZyBleHRyYWN0aW9uIG5lZWRzIGp1ZGdtZW50IGEgcHVyZSBFVk0gY29udHJhY3QgY2FuJ3QgbWFrZS4gR2VuTGF5ZXIgdmFsaWRhdG9ycyBlYWNoIHJ1biB0aGUgTExNIGFuZCB3ZWIgZmV0Y2hlcywgdGhlbiByZWNvbmNpbGUg4oCUIHNvIHRoZSB2ZXJkaWN0IGlzIGRlY2VudHJhbGl6ZWQsIG5vdCBhIHNpbmdsZSBvcmFjbGUncyBjYWxsLiIsCiAgfSwKICB7CiAgICBxOiAiV2hhdCBpcyBhIGNvdW50ZXJmYWN0dWFsPyIsCiAgICBhOiAiVGhlIG9yZGVyaW5nIHRoZSBibG9jayAnc2hvdWxkJyBoYXZlIGhhZCBpZiB0aGUgc29sdmVyIGhhZG4ndCByZW9yZGVyZWQgZm9yIHByb2ZpdC4gQW4gb2ZmLWNoYWluIG9yYWNsZSBzdXBwbGllcyBpdCBieSBVUkw7IGFuIExMTSBub3JtYWxpemVzIGl0IHRvIGEgY2Fub25pY2FsIGxpc3Qgb2YgdHJhbnNhY3Rpb25zIGFuZCBleHBlY3RlZCBvdXRjb21lcy4iLAogIH0sCiAgewogICAgcTogIkhvdyBpcyB0aGUgc2NvcmUgcmVjb25jaWxlZD8iLAogICAgYTogIkVhY2ggdmFsaWRhdG9yIHJldHVybnMgZXh0cmFjdGVkIGJhc2lzIHBvaW50cyBwbHVzIGEgY29uZmlkZW5jZS4gVGhleSBhZ3JlZSB3aGVuIHRoZSBicHMgYXJlIHdpdGhpbiBhIHRvbGVyYW5jZSBiYW5kIGFuZCBjb25maWRlbmNlcyBhcmUgY2xvc2Ug4oCUIGEgY3VzdG9tIHByZWRpY2F0ZSByYXRoZXIgdGhhbiBleGFjdC1tYXRjaCBlcXVhbGl0eS4iLAogIH0sCiAgewogICAgcTogIkNhbiB0aGUgc29sdmVyIGFwcGVhbD8iLAogICAgYTogIlllcy4gVGhlIHNvbHZlciBwb3N0cyBhbiBhcHBlYWwgYm9uZCBhbmQgYSBzZWNvbmQgb3JhY2xlIFVSTC4gQSBmcmVzaCBzY29yZSBpcyBydW47IGlmIGl0IGxhbmRzIHdpdGhpbiB0b2xlcmFuY2Ugb2YgdGhlIG9yaWdpbmFsIGEgdGllLWJyZWFrZXIgZGVjaWRlcywgb3RoZXJ3aXNlIHRoZSBoaWdoZXItY29uZmlkZW5jZSBmaWd1cmUgc3RhbmRzLiIsCiAgfSwKICB7CiAgICBxOiAiSXMgbXkgZGF0YSBwcml2YXRlPyIsCiAgICBhOiAiRXZlcnl0aGluZyB5b3Ugc3VibWl0IOKAlCBidW5kbGUgaGFzaGVzLCBzd2Fwcywgb3JhY2xlIFVSTHMg4oCUIGlzIHB1YmxpYyBvbi1jaGFpbiBieSBkZXNpZ24sIGJlY2F1c2UgdGhlIGNvdXJ0IGhhcyB0byBiZSBhdWRpdGFibGUuIERvbid0IHB1dCBzZWNyZXRzIGluIGEgY29tcGxhaW50LiIsCiAgfSwKXTsKCmZ1bmN0aW9uIEZhcVNlY3Rpb24oKSB7CiAgY29uc3QgcmVmID0gdXNlUmV2ZWFsPEhUTUxEaXZFbGVtZW50PigpOwogIHJldHVybiAoCiAgICA8c2VjdGlvbiBjbGFzc05hbWU9InNlY3Rpb24iIGlkPSJmYXEiIHJlZj17cmVmfT4KICAgICAgPGRpdiBjbGFzc05hbWU9IndyYXAiPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJzZWN0aW9uLWhlYWQiPgogICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJyZXZlYWwiPgogICAgICAgICAgICA8RXllYnJvdz5GQVE8L0V5ZWJyb3c+CiAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJyZXZlYWwiPlF1ZXN0aW9ucyBiZWZvcmUgeW91IGVudGVyLjwvaDI+CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InJldmVhbCI+CiAgICAgICAgICA8QWNjb3JkaW9uIGl0ZW1zPXtGQVF9IC8+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9zZWN0aW9uPgogICk7Cn0KCmZ1bmN0aW9uIEZvb3RlcigpIHsKICByZXR1cm4gKAogICAgPGZvb3RlciBjbGFzc05hbWU9e3MuZm9vdGVyfT4KICAgICAgPGRpdiBjbGFzc05hbWU9e2B3cmFwICR7cy5mb290ZXJJbm5lcn1gfT4KICAgICAgICA8c3BhbiBjbGFzc05hbWU9e3MuZm9vdEJyYW5kfT4KICAgICAgICAgIDxJY29uUmV3aW5kIHNpemU9ezE1fSAvPiBUSU1FwrdNQUNISU5FCiAgICAgICAgPC9zcGFuPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT17cy5mb290TWlkfT5BbiBNRVYtZmFpcm5lc3MgcmViYXRlIGNvdXJ0IG9uIEdlbkxheWVyIHN0dWRpb25ldC48L3NwYW4+CiAgICAgICAgPGEKICAgICAgICAgIGNsYXNzTmFtZT0ibW9ubyIKICAgICAgICAgIGhyZWY9e2BodHRwczovL3N0dWRpby5nZW5sYXllci5jb20vY29udHJhY3RzLyR7Q09OVFJBQ1RfQUREUkVTU31gfQogICAgICAgICAgdGFyZ2V0PSJfYmxhbmsiCiAgICAgICAgICByZWw9Im5vcmVmZXJyZXIiCiAgICAgICAgPgogICAgICAgICAge0NPTlRSQUNUX0FERFJFU1Muc2xpY2UoMCwgNil94oCme0NPTlRSQUNUX0FERFJFU1Muc2xpY2UoLTQpfQogICAgICAgIDwvYT4KICAgICAgPC9kaXY+CiAgICA8L2Zvb3Rlcj4KICApOwp9CgpleHBvcnQgZnVuY3Rpb24gTGFuZGluZygpIHsKICByZXR1cm4gKAogICAgPD4KICAgICAgPGEgaHJlZj0iI21haW4iIGNsYXNzTmFtZT0ic2tpcC1saW5rIj4KICAgICAgICBTa2lwIHRvIGNvbnRlbnQKICAgICAgPC9hPgogICAgICA8TmF2IC8+CiAgICAgIDxtYWluIGlkPSJtYWluIj4KICAgICAgICA8SGVybyAvPgogICAgICAgIDxXaGF0SXMgLz4KICAgICAgICA8SG93SXRXb3JrcyAvPgogICAgICAgIDxNZWNoYW5pY3MgLz4KICAgICAgICA8VGhlQ291cnQgLz4KICAgICAgICA8RmFxU2VjdGlvbiAvPgogICAgICA8L21haW4+CiAgICAgIDxGb290ZXIgLz4KICAgIDwvPgogICk7Cn0K
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { gsap } from "gsap";
+import s from "./Landing.module.css";
+import { Eyebrow } from "../components/ui";
+import { Starfield } from "../components/Starfield";
+import { StageFlow } from "../components/StageFlow";
+import { Accordion } from "../components/Accordion";
+import {
+  IconRewind,
+  IconBundle,
+  IconFlag,
+  IconLink,
+  IconSpark,
+  IconCoins,
+  IconGavel,
+  IconScale,
+  IconShield,
+} from "../components/icons";
+import { useReveal } from "../hooks/useReveal";
+import { getCountByBand, type BandCounts } from "../contractService";
+import { CONTRACT_ADDRESS } from "../chain";
+
+const NAV = [
+  { label: "How it works", href: "#how" },
+  { label: "Mechanics", href: "#mechanics" },
+  { label: "The Court", href: "#court" },
+  { label: "FAQ", href: "#faq" },
+];
+
+function Nav() {
+  const [solid, setSolid] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setSolid(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <header className={`${s.nav} ${solid ? s.navSolid : ""}`}>
+      <div className={`wrap ${s.navInner}`}>
+        <Link to="/" className={s.brand} aria-label="Time-Machine home">
+          <span className={s.brandGlyph}>
+            <IconRewind size={18} />
+          </span>
+          <b>TIME&middot;MACHINE</b>
+        </Link>
+        <nav className={s.navlinks} aria-label="Primary">
+          {NAV.map((n) => (
+            <a key={n.href} href={n.href}>
+              {n.label}
+            </a>
+          ))}
+        </nav>
+        <Link to="/court" className={`btn sm ${s.navcta}`}>
+          Enter the Court
+          <span className="icoCircle">
+            <IconScale size={12} />
+          </span>
+        </Link>
+      </div>
+    </header>
+  );
+}
+
+function HeroGlyph() {
+  const ref = useRef<SVGSVGElement | null>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const ringOuter = el.querySelector(".ringOuter");
+    const arcs = el.querySelectorAll(".arc");
+    const tl = gsap.timeline({ repeat: -1, defaults: { ease: "none" } });
+    tl.to(ringOuter, { rotation: 360, transformOrigin: "50% 50%", duration: 60 }, 0);
+    gsap.fromTo(
+      arcs,
+      { opacity: 0.15 },
+      { opacity: 0.7, duration: 1.6, stagger: 0.25, yoyo: true, repeat: -1, ease: "sine.inOut" }
+    );
+    return () => {
+      tl.kill();
+      gsap.killTweensOf(arcs);
+    };
+  }, []);
+  return (
+    <svg ref={ref} className={s.glyph} viewBox="0 0 320 320" fill="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="hg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stopColor="#00d4ff" />
+          <stop offset="100%" stopColor="#ff006e" />
+        </linearGradient>
+      </defs>
+      <g className="ringOuter">
+        <circle cx="160" cy="160" r="148" stroke="url(#hg)" strokeWidth="1" opacity="0.4" />
+        {Array.from({ length: 60 }).map((_, i) => (
+          <line
+            key={i}
+            x1="160"
+            y1="18"
+            x2="160"
+            y2={i % 5 === 0 ? 30 : 25}
+            stroke="#b8c5d6"
+            strokeWidth="1"
+            opacity={i % 5 === 0 ? 0.5 : 0.2}
+            transform={`rotate(${i * 6} 160 160)`}
+          />
+        ))}
+      </g>
+      <circle className="arc" cx="160" cy="160" r="112" stroke="#00d4ff" strokeWidth="1.5" strokeDasharray="40 600" opacity="0.4" />
+      <circle className="arc" cx="160" cy="160" r="92" stroke="#ff006e" strokeWidth="1.5" strokeDasharray="30 480" opacity="0.4" />
+      <circle cx="160" cy="160" r="70" stroke="#b8c5d6" strokeWidth="1" opacity="0.18" />
+      {/* rewind chevrons at the core */}
+      <g stroke="url(#hg)" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M168 144l-20 16 20 16" />
+        <path d="M150 144l-20 16 20 16" />
+      </g>
+      <circle cx="160" cy="160" r="5" fill="#eaf2ff" />
+    </svg>
+  );
+}
+
+function Hero() {
+  const root = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const ctx = gsap.context(() => {
+      gsap.from("[data-hx]", {
+        opacity: 0,
+        y: 26,
+        duration: 0.9,
+        stagger: 0.12,
+        ease: "power3.out",
+        delay: 0.1,
+      });
+    }, root);
+    return () => ctx.revert();
+  }, []);
+  return (
+    <section className={s.hero} ref={root}>
+      <Starfield className={s.stars} />
+      <div className={`wrap ${s.heroGrid}`}>
+        <div className={s.heroCopy}>
+          <div data-hx>
+            <Eyebrow>actual â†” counterfactual</Eyebrow>
+          </div>
+          <h1 className={s.h1} data-hx>
+            Rewind the block.
+            <br />
+            Price the <em>squeeze.</em>
+          </h1>
+          <p className={s.lede} data-hx>
+            mev-fair replays a DEX bundle against a fair-ordering counterfactual, scores the value
+            extracted in basis points, and pays it back to the victims on-chain.
+          </p>
+          <div className={s.heroCtas} data-hx>
+            <Link to="/court" className="btn">
+              <span>Enter the Court</span>
+              <span className="icoCircle">
+                <IconScale size={13} />
+              </span>
+            </Link>
+            <a href="#mechanics" className="textlink">
+              Read the mechanics â†“
+            </a>
+          </div>
+        </div>
+        <div className={s.heroArt} data-hx>
+          <HeroGlyph />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const STATS = [
+  { k: "GenLayer-native", v: "validator-scored" },
+  { k: "On-chain rebates", v: "accrual ledger" },
+  { k: "LLM jury", v: "4 reconciled sites" },
+  { k: "Appeal-ready", v: "second oracle" },
+];
+
+function WhatIs() {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section className="section" id="what" ref={ref}>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="reveal">
+            <Eyebrow>What is mev-fair</Eyebrow>
+          </span>
+          <h2 className="reveal">A small-claims court for sandwiched trades.</h2>
+          <p className="reveal">
+            When a solver reorders a block to extract value, the victims rarely get it back. mev-fair
+            turns that extraction into a measurable number and a withdrawable rebate â€” judged by a
+            GenLayer validator panel, not a centralized referee.
+          </p>
+        </div>
+        <div className={s.stats}>
+          {STATS.map((st) => (
+            <div key={st.k} className={`glass ${s.stat} reveal`}>
+              <b>{st.k}</b>
+              <span>{st.v}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const STEPS = [
+  { icon: IconBundle, t: "Submit a bundle", d: "A solver posts a DEX bundle hash, its swaps, and a fair-trade attestation, backed by a bond." },
+  { icon: IconFlag, t: "File a complaint", d: "Victims point at their own transaction hash and the harm they claim, in basis points." },
+  { icon: IconLink, t: "Attach a counterfactual", d: "Anyone attaches an oracle URL describing the fair ordering. An LLM cleans it to canonical form." },
+  { icon: IconSpark, t: "Score the extraction", d: "GenLayer validators replay actual vs counterfactual and reconcile the extracted bps." },
+  { icon: IconCoins, t: "Withdraw the rebate", d: "Credit accrues pro-rata to victims from the solver bond. They pull it whenever they like." },
+];
+
+function HowItWorks() {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section className="section" id="how" ref={ref}>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="reveal">
+            <Eyebrow>How it works</Eyebrow>
+          </span>
+          <h2 className="reveal">Five steps from extraction to rebate.</h2>
+        </div>
+        <ol className={s.steps}>
+          {STEPS.map((st, i) => {
+            const Icon = st.icon;
+            return (
+              <li key={st.t} className={`glass ${s.step} reveal`}>
+                <span className={s.stepNo}>{String(i + 1).padStart(2, "0")}</span>
+                <span className={s.stepIcon}>
+                  <Icon size={20} />
+                </span>
+                <h3>{st.t}</h3>
+                <p>{st.d}</p>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+const MECH = [
+  {
+    icon: IconBundle,
+    t: "Pipeline of stages",
+    d: "Every write runs through named stages â€” Ingest, Parse, CFL, Score, Judge, Rebate, Appeal â€” each appending to an auditable stage log on the bundle.",
+  },
+  {
+    icon: IconSpark,
+    t: "LLM consensus",
+    d: "Four distinct model sites (clean, score, appeal-rescore, tie-break) are reconciled by a custom bps-tolerance predicate, not naive string equality.",
+  },
+  {
+    icon: IconShield,
+    t: "Appeal",
+    d: "A solver can post an appeal bond and a second oracle. A fresh score is reconciled against the first; the higher-confidence figure or a tie-breaker wins.",
+  },
+];
+
+function Mechanics() {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section className="section" id="mechanics" ref={ref}>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="reveal">
+            <Eyebrow>Mechanics</Eyebrow>
+          </span>
+          <h2 className="reveal">Three moving parts, one verdict.</h2>
+        </div>
+        <div className={s.mechCols}>
+          {MECH.map((m) => {
+            const Icon = m.icon;
+            return (
+              <article key={m.t} className={`${s.mechCol} reveal`}>
+                <span className={s.mechIcon}>
+                  <Icon size={22} />
+                </span>
+                <h3>{m.t}</h3>
+                <p>{m.d}</p>
+              </article>
+            );
+          })}
+        </div>
+        <div className={`glass ${s.flowCard} reveal`}>
+          <div className={s.flowHead}>
+            <span className="mono">stage_log</span>
+            <span className={s.flowHint}>bundle progressing through the pipeline</span>
+          </div>
+          <StageFlow />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const BANDS: { k: keyof BandCounts; label: string }[] = [
+  { k: "FAIR", label: "fair" },
+  { k: "BORDERLINE", label: "borderline" },
+  { k: "EXTRACTIVE", label: "extractive" },
+  { k: "PREDATORY", label: "predatory" },
+  { k: "PENDING", label: "pending" },
+];
+
+function TheCourt() {
+  const ref = useReveal<HTMLDivElement>();
+  const [counts, setCounts] = useState<BandCounts | null>(null);
+  const [err, setErr] = useState(false);
+  useEffect(() => {
+    let on = true;
+    getCountByBand()
+      .then((c) => on && setCounts(c))
+      .catch(() => on && setErr(true));
+    return () => {
+      on = false;
+    };
+  }, []);
+  return (
+    <section className="section" id="court" ref={ref}>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="reveal">
+            <Eyebrow>The Court Â· live</Eyebrow>
+          </span>
+          <h2 className="reveal">Bundles by band, on-chain right now.</h2>
+          <p className="reveal">
+            Read straight from <code>count_by_band()</code> on the deployed contract.
+          </p>
+        </div>
+        <div className={s.bands}>
+          {BANDS.map((b) => (
+            <div
+              key={b.k}
+              className={`glass ${s.bandCard} reveal`}
+              style={{ ["--bandc" as any]: `var(--band-${b.k})` }}
+            >
+              <b className="tnum">{counts ? counts[b.k] : err ? "â€”" : "Â·Â·"}</b>
+              <span>{b.label}</span>
+            </div>
+          ))}
+        </div>
+        <div className={`${s.courtCta} reveal`}>
+          <Link to="/court" className="btn">
+            <span>Open the workspace</span>
+            <span className="icoCircle">
+              <IconGavel size={13} />
+            </span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const FAQ = [
+  {
+    q: "Why GenLayer?",
+    a: "Scoring extraction needs judgment a pure EVM contract can't make. GenLayer validators each run the LLM and web fetches, then reconcile â€” so the verdict is decentralized, not a single oracle's call.",
+  },
+  {
+    q: "What is a counterfactual?",
+    a: "The ordering the block 'should' have had if the solver hadn't reordered for profit. An off-chain oracle supplies it by URL; an LLM normalizes it to a canonical list of transactions and expected outcomes.",
+  },
+  {
+    q: "How is the score reconciled?",
+    a: "Each validator returns extracted basis points plus a confidence. They agree when the bps are within a tolerance band and confidences are close â€” a custom predicate rather than exact-match equality.",
+  },
+  {
+    q: "Can the solver appeal?",
+    a: "Yes. The solver posts an appeal bond and a second oracle URL. A fresh score is run; if it lands within tolerance of the original a tie-breaker decides, otherwise the higher-confidence figure stands.",
+  },
+  {
+    q: "Is my data private?",
+    a: "Everything you submit â€” bundle hashes, swaps, oracle URLs â€” is public on-chain by design, because the court has to be auditable. Don't put secrets in a complaint.",
+  },
+];
+
+function FaqSection() {
+  const ref = useReveal<HTMLDivElement>();
+  return (
+    <section className="section" id="faq" ref={ref}>
+      <div className="wrap">
+        <div className="section-head">
+          <span className="reveal">
+            <Eyebrow>FAQ</Eyebrow>
+          </span>
+          <h2 className="reveal">Questions before you enter.</h2>
+        </div>
+        <div className="reveal">
+          <Accordion items={FAQ} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className={s.footer}>
+      <div className={`wrap ${s.footerInner}`}>
+        <span className={s.footBrand}>
+          <IconRewind size={15} /> TIMEÂ·MACHINE
+        </span>
+        <span className={s.footMid}>An MEV-fairness rebate court on GenLayer studionet.</span>
+        <a
+          className="mono"
+          href={`https://studio.genlayer.com/contracts/${CONTRACT_ADDRESS}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          {CONTRACT_ADDRESS.slice(0, 6)}â€¦{CONTRACT_ADDRESS.slice(-4)}
+        </a>
+      </div>
+    </footer>
+  );
+}
+
+export function Landing() {
+  return (
+    <>
+      <a href="#main" className="skip-link">
+        Skip to content
+      </a>
+      <Nav />
+      <main id="main">
+        <Hero />
+        <WhatIs />
+        <HowItWorks />
+        <Mechanics />
+        <TheCourt />
+        <FaqSection />
+      </main>
+      <Footer />
+    </>
+  );
+}

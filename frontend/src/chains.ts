@@ -1,1 +1,17 @@
-aW1wb3J0IHsgZGVmaW5lQ2hhaW4gfSBmcm9tICJ2aWVtIjsKaW1wb3J0IHsgR0VOTEFZRVJfQ0hBSU5fSUQsIEdFTkxBWUVSX1JQQ19VUkwgfSBmcm9tICIuL2NoYWluIjsKCi8vIEdlbkxheWVyIFN0dWRpb25ldCB3YWxsZXQgY2hhaW4uIFRoZSBjaGFpbiBpZCBhbmQgUlBDIGNvbWUgZnJvbSAuL2NoYWluCi8vIChlbnYtZHJpdmVuIHdpdGggY29tbWl0dGVkIGZhbGxiYWNrcykuIFRoZSBNZXZGYWlyQ291cnQgY29udHJhY3QgaXMgZGVwbG95ZWQKLy8gb24gaG9zdGVkIHN0dWRpb25ldCAoc2VlIGJhY2tlbmQvZGVwbG95bWVudC5qc29uKS4KZXhwb3J0IGNvbnN0IHN0dWRpb25ldCA9IGRlZmluZUNoYWluKHsKICBpZDogR0VOTEFZRVJfQ0hBSU5fSUQsCiAgbmFtZTogIkdlbkxheWVyIFN0dWRpb25ldCIsCiAgbmV0d29yazogInN0dWRpb25ldCIsCiAgbmF0aXZlQ3VycmVuY3k6IHsgbmFtZTogIkdFTiIsIHN5bWJvbDogIkdFTiIsIGRlY2ltYWxzOiAxOCB9LAogIHJwY1VybHM6IHsKICAgIGRlZmF1bHQ6IHsgaHR0cDogW0dFTkxBWUVSX1JQQ19VUkxdIH0sCiAgICBwdWJsaWM6IHsgaHR0cDogW0dFTkxBWUVSX1JQQ19VUkxdIH0sCiAgfSwKICB0ZXN0bmV0OiB0cnVlLAp9KTsK
+import { defineChain } from "viem";
+import { GENLAYER_CHAIN_ID, GENLAYER_RPC_URL } from "./chain";
+
+// GenLayer Studionet wallet chain. The chain id and RPC come from ./chain
+// (env-driven with committed fallbacks). The MevFairCourt contract is deployed
+// on hosted studionet (see backend/deployment.json).
+export const studionet = defineChain({
+  id: GENLAYER_CHAIN_ID,
+  name: "GenLayer Studionet",
+  network: "studionet",
+  nativeCurrency: { name: "GEN", symbol: "GEN", decimals: 18 },
+  rpcUrls: {
+    default: { http: [GENLAYER_RPC_URL] },
+    public: { http: [GENLAYER_RPC_URL] },
+  },
+  testnet: true,
+});

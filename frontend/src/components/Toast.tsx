@@ -1,1 +1,66 @@
-aW1wb3J0IHsgY3JlYXRlQ29udGV4dCwgdXNlQ2FsbGJhY2ssIHVzZUNvbnRleHQsIHVzZU1lbW8sIHVzZVJlZiwgdXNlU3RhdGUgfSBmcm9tICJyZWFjdCI7CmltcG9ydCB0eXBlIHsgUmVhY3ROb2RlIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgcyBmcm9tICIuL1RvYXN0Lm1vZHVsZS5jc3MiOwoKdHlwZSBLaW5kID0gImluZm8iIHwgInN1Y2Nlc3MiIHwgImVycm9yIiB8ICJwZW5kaW5nIjsKaW50ZXJmYWNlIFRvYXN0IHsKICBpZDogbnVtYmVyOwogIGtpbmQ6IEtpbmQ7CiAgbXNnOiBzdHJpbmc7Cn0KaW50ZXJmYWNlIFRvYXN0QXBpIHsKICBwdXNoOiAoa2luZDogS2luZCwgbXNnOiBzdHJpbmcpID0+IG51bWJlcjsKICB1cGRhdGU6IChpZDogbnVtYmVyLCBraW5kOiBLaW5kLCBtc2c6IHN0cmluZykgPT4gdm9pZDsKICBkaXNtaXNzOiAoaWQ6IG51bWJlcikgPT4gdm9pZDsKfQoKY29uc3QgQ3R4ID0gY3JlYXRlQ29udGV4dDxUb2FzdEFwaSB8IG51bGw+KG51bGwpOwoKZXhwb3J0IGZ1bmN0aW9uIHVzZVRvYXN0KCk6IFRvYXN0QXBpIHsKICBjb25zdCB2ID0gdXNlQ29udGV4dChDdHgpOwogIGlmICghdikgdGhyb3cgbmV3IEVycm9yKCJ1c2VUb2FzdCBvdXRzaWRlIHByb3ZpZGVyIik7CiAgcmV0dXJuIHY7Cn0KCmV4cG9ydCBmdW5jdGlvbiBUb2FzdFByb3ZpZGVyKHsgY2hpbGRyZW4gfTogeyBjaGlsZHJlbjogUmVhY3ROb2RlIH0pIHsKICBjb25zdCBbdG9hc3RzLCBzZXRUb2FzdHNdID0gdXNlU3RhdGU8VG9hc3RbXT4oW10pOwogIGNvbnN0IHNlcSA9IHVzZVJlZigxKTsKCiAgY29uc3QgZGlzbWlzcyA9IHVzZUNhbGxiYWNrKChpZDogbnVtYmVyKSA9PiB7CiAgICBzZXRUb2FzdHMoKHQpID0+IHQuZmlsdGVyKCh4KSA9PiB4LmlkICE9PSBpZCkpOwogIH0sIFtdKTsKCiAgY29uc3QgcHVzaCA9IHVzZUNhbGxiYWNrKAogICAgKGtpbmQ6IEtpbmQsIG1zZzogc3RyaW5nKSA9PiB7CiAgICAgIGNvbnN0IGlkID0gc2VxLmN1cnJlbnQrKzsKICAgICAgc2V0VG9hc3RzKCh0KSA9PiBbLi4udCwgeyBpZCwga2luZCwgbXNnIH1dKTsKICAgICAgaWYgKGtpbmQgIT09ICJwZW5kaW5nIikgc2V0VGltZW91dCgoKSA9PiBkaXNtaXNzKGlkKSwgNTIwMCk7CiAgICAgIHJldHVybiBpZDsKICAgIH0sCiAgICBbZGlzbWlzc10KICApOwoKICBjb25zdCB1cGRhdGUgPSB1c2VDYWxsYmFjaygKICAgIChpZDogbnVtYmVyLCBraW5kOiBLaW5kLCBtc2c6IHN0cmluZykgPT4gewogICAgICBzZXRUb2FzdHMoKHQpID0+IHQubWFwKCh4KSA9PiAoeC5pZCA9PT0gaWQgPyB7IC4uLngsIGtpbmQsIG1zZyB9IDogeCkpKTsKICAgICAgaWYgKGtpbmQgIT09ICJwZW5kaW5nIikgc2V0VGltZW91dCgoKSA9PiBkaXNtaXNzKGlkKSwgNTIwMCk7CiAgICB9LAogICAgW2Rpc21pc3NdCiAgKTsKCiAgY29uc3QgYXBpID0gdXNlTWVtbygoKSA9PiAoeyBwdXNoLCB1cGRhdGUsIGRpc21pc3MgfSksIFtwdXNoLCB1cGRhdGUsIGRpc21pc3NdKTsKCiAgcmV0dXJuICgKICAgIDxDdHguUHJvdmlkZXIgdmFsdWU9e2FwaX0+CiAgICAgIHtjaGlsZHJlbn0KICAgICAgPGRpdiBjbGFzc05hbWU9e3Muc3RhY2t9IHJvbGU9InN0YXR1cyIgYXJpYS1saXZlPSJwb2xpdGUiPgogICAgICAgIHt0b2FzdHMubWFwKCh0KSA9PiAoCiAgICAgICAgICA8ZGl2IGtleT17dC5pZH0gY2xhc3NOYW1lPXtgJHtzLnRvYXN0fSAke3NbdC5raW5kXX1gfSBvbkNsaWNrPXsoKSA9PiBkaXNtaXNzKHQuaWQpfT4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtzLmRvdH0gLz4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPXtzLm1zZ30+e3QubXNnfTwvc3Bhbj4KICAgICAgICAgIDwvZGl2PgogICAgICAgICkpfQogICAgICA8L2Rpdj4KICAgIDwvQ3R4LlByb3ZpZGVyPgogICk7Cn0K
+import { createContext, useCallback, useContext, useMemo, useRef, useState } from "react";
+import type { ReactNode } from "react";
+import s from "./Toast.module.css";
+
+type Kind = "info" | "success" | "error" | "pending";
+interface Toast {
+  id: number;
+  kind: Kind;
+  msg: string;
+}
+interface ToastApi {
+  push: (kind: Kind, msg: string) => number;
+  update: (id: number, kind: Kind, msg: string) => void;
+  dismiss: (id: number) => void;
+}
+
+const Ctx = createContext<ToastApi | null>(null);
+
+export function useToast(): ToastApi {
+  const v = useContext(Ctx);
+  if (!v) throw new Error("useToast outside provider");
+  return v;
+}
+
+export function ToastProvider({ children }: { children: ReactNode }) {
+  const [toasts, setToasts] = useState<Toast[]>([]);
+  const seq = useRef(1);
+
+  const dismiss = useCallback((id: number) => {
+    setToasts((t) => t.filter((x) => x.id !== id));
+  }, []);
+
+  const push = useCallback(
+    (kind: Kind, msg: string) => {
+      const id = seq.current++;
+      setToasts((t) => [...t, { id, kind, msg }]);
+      if (kind !== "pending") setTimeout(() => dismiss(id), 5200);
+      return id;
+    },
+    [dismiss]
+  );
+
+  const update = useCallback(
+    (id: number, kind: Kind, msg: string) => {
+      setToasts((t) => t.map((x) => (x.id === id ? { ...x, kind, msg } : x)));
+      if (kind !== "pending") setTimeout(() => dismiss(id), 5200);
+    },
+    [dismiss]
+  );
+
+  const api = useMemo(() => ({ push, update, dismiss }), [push, update, dismiss]);
+
+  return (
+    <Ctx.Provider value={api}>
+      {children}
+      <div className={s.stack} role="status" aria-live="polite">
+        {toasts.map((t) => (
+          <div key={t.id} className={`${s.toast} ${s[t.kind]}`} onClick={() => dismiss(t.id)}>
+            <span className={s.dot} />
+            <span className={s.msg}>{t.msg}</span>
+          </div>
+        ))}
+      </div>
+    </Ctx.Provider>
+  );
+}

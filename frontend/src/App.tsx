@@ -1,1 +1,40 @@
-aW1wb3J0IHsgUm91dGVzLCBSb3V0ZSwgTGluaywgdXNlTG9jYXRpb24gfSBmcm9tICJyZWFjdC1yb3V0ZXItZG9tIjsKaW1wb3J0IHsgdXNlRWZmZWN0IH0gZnJvbSAicmVhY3QiOwppbXBvcnQgeyBMYW5kaW5nIH0gZnJvbSAiLi9wYWdlcy9MYW5kaW5nIjsKaW1wb3J0IHsgQ291cnQgfSBmcm9tICIuL3BhZ2VzL0NvdXJ0IjsKCmZ1bmN0aW9uIE5vdEZvdW5kKCkgewogIHJldHVybiAoCiAgICA8ZGl2CiAgICAgIHN0eWxlPXt7CiAgICAgICAgbWluSGVpZ2h0OiAiMTAwZHZoIiwKICAgICAgICBkaXNwbGF5OiAiZ3JpZCIsCiAgICAgICAgcGxhY2VJdGVtczogImNlbnRlciIsCiAgICAgICAgdGV4dEFsaWduOiAiY2VudGVyIiwKICAgICAgICBwYWRkaW5nOiAiMjRweCIsCiAgICAgIH19CiAgICA+CiAgICAgIDxkaXY+CiAgICAgICAgPHAgY2xhc3NOYW1lPSJleWVicm93Ij40MDQ8L3A+CiAgICAgICAgPGgxIHN0eWxlPXt7IGZvbnRTaXplOiAidmFyKC0tdC1oMikiLCBtYXJnaW46ICIxNnB4IDAiIH19PlRoaXMgdGltZWxpbmUgZG9lc24ndCBleGlzdC48L2gxPgogICAgICAgIDxMaW5rIHRvPSIvIiBjbGFzc05hbWU9ImJ0biI+CiAgICAgICAgICBCYWNrIHRvIHRoZSBzdGFydAogICAgICAgIDwvTGluaz4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICApOwp9CgpleHBvcnQgZnVuY3Rpb24gQXBwKCkgewogIGNvbnN0IHsgcGF0aG5hbWUgfSA9IHVzZUxvY2F0aW9uKCk7CiAgdXNlRWZmZWN0KCgpID0+IHsKICAgIHdpbmRvdy5zY3JvbGxUbygwLCAwKTsKICB9LCBbcGF0aG5hbWVdKTsKICByZXR1cm4gKAogICAgPFJvdXRlcz4KICAgICAgPFJvdXRlIHBhdGg9Ii8iIGVsZW1lbnQ9ezxMYW5kaW5nIC8+fSAvPgogICAgICA8Um91dGUgcGF0aD0iL2NvdXJ0IiBlbGVtZW50PXs8Q291cnQgLz59IC8+CiAgICAgIDxSb3V0ZSBwYXRoPSIqIiBlbGVtZW50PXs8Tm90Rm91bmQgLz59IC8+CiAgICA8L1JvdXRlcz4KICApOwp9Cg==
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { Landing } from "./pages/Landing";
+import { Court } from "./pages/Court";
+
+function NotFound() {
+  return (
+    <div
+      style={{
+        minHeight: "100dvh",
+        display: "grid",
+        placeItems: "center",
+        textAlign: "center",
+        padding: "24px",
+      }}
+    >
+      <div>
+        <p className="eyebrow">404</p>
+        <h1 style={{ fontSize: "var(--t-h2)", margin: "16px 0" }}>This timeline doesn't exist.</h1>
+        <Link to="/" className="btn">
+          Back to the start
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export function App() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/court" element={<Court />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+}
